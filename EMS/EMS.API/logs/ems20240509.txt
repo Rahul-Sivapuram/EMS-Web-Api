@@ -1,0 +1,6 @@
+2024-05-09 14:24:41.093 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-09 14:24:41.229 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-09 14:24:41.232 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-09 14:24:41.233 +05:30 [INF] Hosting environment: Development
+2024-05-09 14:24:41.233 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS Api\EMS.API
+2024-05-09 14:32:10.706 +05:30 [INF] Application is shutting down...

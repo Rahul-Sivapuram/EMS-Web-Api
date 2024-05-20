@@ -1,0 +1,209 @@
+2024-05-07 16:55:22.684 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-07 16:55:22.871 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-07 16:55:22.875 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-07 16:55:22.876 +05:30 [INF] Hosting environment: Development
+2024-05-07 16:55:22.876 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS Api\EMS.API
+2024-05-07 16:55:23.593 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-07 16:55:23.782 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 190.1576ms
+2024-05-07 16:55:23.793 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 16:55:23.799 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 4.2303ms
+2024-05-07 16:55:23.974 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-07 16:55:24.333 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 359.4404ms
+2024-05-07 16:55:58.271 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-07 16:55:58.286 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 14.7017ms
+2024-05-07 16:55:58.297 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 16:55:58.297 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.5516ms
+2024-05-07 16:55:58.391 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-07 16:55:58.408 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.9295ms
+2024-05-07 16:58:19.013 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-07 16:58:19.231 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-07 16:58:19.237 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-07 16:58:19.239 +05:30 [INF] Hosting environment: Development
+2024-05-07 16:58:19.239 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS Api\EMS.API
+2024-05-07 16:58:19.466 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-07 16:58:19.690 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 226.3328ms
+2024-05-07 16:58:19.704 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 16:58:19.709 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 5.3377ms
+2024-05-07 16:58:19.897 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-07 16:58:20.178 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 280.6965ms
+2024-05-07 18:49:47.723 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-07 18:49:47.882 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-07 18:49:47.888 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-07 18:49:47.889 +05:30 [INF] Hosting environment: Development
+2024-05-07 18:49:47.889 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS Api\EMS.API
+2024-05-07 18:49:47.953 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-07 18:49:48.172 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 217.9219ms
+2024-05-07 18:49:48.329 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 18:49:48.334 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 4.963ms
+2024-05-07 18:49:48.531 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-07 18:49:48.804 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 272.7955ms
+2024-05-07 18:50:30.630 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees/filter?employeename=r - null null
+2024-05-07 18:50:30.635 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-07 18:50:30.736 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Filter (EMS.API)'
+2024-05-07 18:50:30.760 +05:30 [INF] Route matched with {action = "Filter", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Filter(System.Collections.Generic.Dictionary`2[System.String,System.String]) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-07 18:50:32.279 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+2024-05-07 18:50:32.377 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-07 18:50:32.392 +05:30 [INF] Executed action EMS.API.EmployeesController.Filter (EMS.API) in 1628.3302ms
+2024-05-07 18:50:32.392 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Filter (EMS.API)'
+2024-05-07 18:50:32.401 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees/filter?employeename=r - 200 null application/json; charset=utf-8 1771.7968ms
+2024-05-07 18:57:24.272 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-07 18:57:24.274 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 2.4987ms
+2024-05-07 18:57:24.289 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 18:57:24.290 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.7491ms
+2024-05-07 18:57:24.512 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-07 18:57:24.535 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.3687ms
+2024-05-07 18:58:49.230 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-07 18:58:49.237 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 6.7493ms
+2024-05-07 18:58:49.248 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 18:58:49.249 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4625ms
+2024-05-07 18:58:49.407 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-07 18:58:49.426 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.207ms
+2024-05-07 18:58:57.315 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-07 18:58:57.334 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 18.863ms
+2024-05-07 18:58:57.364 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 18:58:57.365 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.2409ms
+2024-05-07 18:58:57.712 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-07 18:58:57.722 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.0984ms
+2024-05-07 19:07:49.058 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-07 19:07:49.073 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 13.9896ms
+2024-05-07 19:07:49.093 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 19:07:49.094 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4473ms
+2024-05-07 19:07:49.233 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-07 19:07:49.244 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.5789ms
+2024-05-07 19:07:55.602 +05:30 [INF] Application is shutting down...
+2024-05-07 19:46:08.911 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-07 19:46:09.050 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-07 19:46:09.055 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-07 19:46:09.056 +05:30 [INF] Hosting environment: Development
+2024-05-07 19:46:09.056 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS Api\EMS.API
+2024-05-07 19:46:14.530 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-07 19:46:14.816 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 285.5339ms
+2024-05-07 19:46:14.840 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 19:46:14.844 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 3.889ms
+2024-05-07 19:46:14.978 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-07 19:46:15.233 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 255.093ms
+2024-05-07 19:46:34.007 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-05-07 19:46:34.021 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-07 19:46:34.101 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-07 19:46:34.122 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Get() on controller EMS.API.EmployeesController (EMS.API).
+2024-05-07 19:46:36.790 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+2024-05-07 19:46:36.958 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-07 19:46:36.988 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 2859.4864ms
+2024-05-07 19:46:36.989 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-07 19:46:36.999 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 2992.1173ms
+2024-05-07 19:47:50.122 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees/filter?Location=Mumbai&JobTitle=UIUX%20DESIGNER&Department=PRODUCT%20ENGINEERING&Manager=%22%22&Project=MYNTRA&EmployeeName=r - null null
+2024-05-07 19:47:50.124 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Filter (EMS.API)'
+2024-05-07 19:47:50.196 +05:30 [INF] Route matched with {action = "Filter", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Filter(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-07 19:47:50.313 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+2024-05-07 19:47:50.321 +05:30 [INF] Executed action EMS.API.EmployeesController.Filter (EMS.API) in 124.4372ms
+2024-05-07 19:47:50.323 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Filter (EMS.API)'
+2024-05-07 19:47:50.325 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EMS.API.EmployeesController.Filter(EmployeeFilter query) in C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS Api\EMS.API\Controllers\EmployeeController.cs:line 139
+   at lambda_method82(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-07 19:47:50.359 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees/filter?Location=Mumbai&JobTitle=UIUX%20DESIGNER&Department=PRODUCT%20ENGINEERING&Manager=%22%22&Project=MYNTRA&EmployeeName=r - 500 null text/plain; charset=utf-8 236.4729ms
+2024-05-07 19:48:07.426 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees/filter?Location=Mumbai&JobTitle=UIUX%20DESIGNER&Department=PRODUCT%20ENGINEERING&Manager=rahul%20sivapuram&Project=MYNTRA&EmployeeName=r - null null
+2024-05-07 19:48:07.428 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Filter (EMS.API)'
+2024-05-07 19:48:07.428 +05:30 [INF] Route matched with {action = "Filter", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Filter(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-07 19:48:07.504 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+2024-05-07 19:48:07.505 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-07 19:48:07.505 +05:30 [INF] Executed action EMS.API.EmployeesController.Filter (EMS.API) in 76.4176ms
+2024-05-07 19:48:07.505 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Filter (EMS.API)'
+2024-05-07 19:48:07.505 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees/filter?Location=Mumbai&JobTitle=UIUX%20DESIGNER&Department=PRODUCT%20ENGINEERING&Manager=rahul%20sivapuram&Project=MYNTRA&EmployeeName=r - 200 null application/json; charset=utf-8 79.267ms
+2024-05-07 19:48:45.180 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-07 19:48:45.189 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 8.0565ms
+2024-05-07 19:48:45.199 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 19:48:45.199 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4268ms
+2024-05-07 19:48:45.328 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-07 19:48:45.341 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.2601ms
+2024-05-07 19:49:28.714 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees/filter?Location=MUMBAI&JobTitle=UIUX%20DESIGNER&Department=PRODUCT%20ENGINEERING&Manager=rahul%20sivapuram&Project=MYNTRA&EmployeeName=r - null null
+2024-05-07 19:49:28.715 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Filter (EMS.API)'
+2024-05-07 19:49:28.717 +05:30 [INF] Route matched with {action = "Filter", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Filter(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-07 19:49:28.726 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+2024-05-07 19:49:28.731 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-07 19:49:28.734 +05:30 [INF] Executed action EMS.API.EmployeesController.Filter (EMS.API) in 17.4901ms
+2024-05-07 19:49:28.735 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Filter (EMS.API)'
+2024-05-07 19:49:28.735 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees/filter?Location=MUMBAI&JobTitle=UIUX%20DESIGNER&Department=PRODUCT%20ENGINEERING&Manager=rahul%20sivapuram&Project=MYNTRA&EmployeeName=r - 200 null application/json; charset=utf-8 20.7046ms
+2024-05-07 19:50:00.438 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-07 19:50:00.444 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 5.7641ms
+2024-05-07 19:50:00.480 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 19:50:00.480 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.6929ms
+2024-05-07 19:50:00.764 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-07 19:50:00.787 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.0844ms
+2024-05-07 19:50:33.367 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees/filter?Location=MUMBAI&JobTitle=UIUX%20DESIGNER&Department=PRODUCT%20ENGINEERING&Manager=rahul%20sivapuram&Project=MYNTRA&EmployeeName=r - null null
+2024-05-07 19:50:33.368 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Filter (EMS.API)'
+2024-05-07 19:50:33.370 +05:30 [INF] Route matched with {action = "Filter", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Filter(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-07 19:50:33.422 +05:30 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+2024-05-07 19:50:33.424 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-07 19:50:33.430 +05:30 [INF] Executed action EMS.API.EmployeesController.Filter (EMS.API) in 60.0678ms
+2024-05-07 19:50:33.431 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Filter (EMS.API)'
+2024-05-07 19:50:33.432 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees/filter?Location=MUMBAI&JobTitle=UIUX%20DESIGNER&Department=PRODUCT%20ENGINEERING&Manager=rahul%20sivapuram&Project=MYNTRA&EmployeeName=r - 200 null application/json; charset=utf-8 64.4489ms
+2024-05-07 19:50:41.958 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-07 19:50:41.960 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 2.3186ms
+2024-05-07 19:50:41.996 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 19:50:41.997 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2763ms
+2024-05-07 19:50:42.140 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-07 19:50:42.151 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.6436ms
+2024-05-07 19:56:24.210 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-07 19:56:24.214 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 4.756ms
+2024-05-07 19:56:24.225 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 19:56:24.225 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4699ms
+2024-05-07 19:56:24.368 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-07 19:56:24.381 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.0556ms
+2024-05-07 19:56:41.829 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-07 19:56:41.847 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 17.7675ms
+2024-05-07 19:56:41.867 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-07 19:56:41.868 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.496ms
+2024-05-07 19:56:42.099 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-07 19:56:42.116 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.2716ms
+2024-05-07 19:56:47.941 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-05-07 19:56:47.941 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-07 19:56:47.942 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Get() on controller EMS.API.EmployeesController (EMS.API).
+2024-05-07 19:56:48.004 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+2024-05-07 19:56:48.005 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-07 19:56:48.010 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 67.5292ms
+2024-05-07 19:56:48.010 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-07 19:56:48.010 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 69.5267ms
+2024-05-07 19:57:00.406 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5238/api/Employees/4 - null null
+2024-05-07 19:57:00.407 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Delete (EMS.API)'
+2024-05-07 19:57:00.409 +05:30 [INF] Route matched with {action = "Delete", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.Employee] Delete(Int32) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-07 19:57:00.728 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[DepartmentId], [e].[DOB], [e].[EmailId], [e].[FirstName], [e].[IsManager], [e].[JoiningDate], [e].[LastName], [e].[LocationId], [e].[ManagerId], [e].[MobileNumber], [e].[ProjectId], [e].[RoleId], [e].[Uid]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__id_0
+2024-05-07 19:57:00.730 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.Employee, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-07 19:57:00.742 +05:30 [INF] Executed action EMS.API.EmployeesController.Delete (EMS.API) in 333.1707ms
+2024-05-07 19:57:00.742 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Delete (EMS.API)'
+2024-05-07 19:57:00.742 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5238/api/Employees/4 - 200 null application/json; charset=utf-8 335.9509ms
