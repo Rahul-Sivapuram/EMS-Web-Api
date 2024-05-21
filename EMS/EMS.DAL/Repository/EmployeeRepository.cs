@@ -38,7 +38,7 @@ namespace EMS.DAL
         public int Add(EmployeeDetail employee)
         {
             Employee newEmp = Mapper.EDToEmployee(employee, _context.Locations.ToList(), _context.Roles.ToList(),
-            _context.Departments.ToList(), _context.EmployeeDetails.ToList(), _context.Projects.ToList());
+            _context.Departments.ToList(), _context.EmployeeDetails.ToList(), _context.Projects.ToList(),_context.Modes.ToList());
             _context.Employees.Add(newEmp);
             _context.SaveChanges();
             return employee.Id;

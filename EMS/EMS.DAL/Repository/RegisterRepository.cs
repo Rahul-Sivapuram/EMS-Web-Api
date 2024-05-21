@@ -16,7 +16,7 @@ namespace EMS.DAL
         public bool RegisterUser(RegisterDTO user)
         {
             Employee newEmp = Mapper.RDToEmployee(user,_context.Locations.ToList(),_context.Roles.ToList(),
-            _context.Departments.ToList(),_context.EmployeeDetails.ToList(),_context.Projects.ToList());
+            _context.Departments.ToList(),_context.EmployeeDetails.ToList(),_context.Projects.ToList(),_context.Modes.ToList());
             newEmp.Password = BCrypt.Net.BCrypt.HashPassword(user.Password, 12);
             _context.Employees.Add(newEmp);
             _context.SaveChanges();
