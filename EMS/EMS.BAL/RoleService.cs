@@ -22,11 +22,11 @@ namespace EMS.BAL
             _logger = logger;
         }
 
-        public bool Insert(RoleDetail role)
+        public async Task<bool> Insert(RoleDetail role)
         {
             try
             {
-                return _roleRepository.AddRole(role);
+                return await _roleRepository.AddRole(role);
             }
             catch (Exception ex)
             {

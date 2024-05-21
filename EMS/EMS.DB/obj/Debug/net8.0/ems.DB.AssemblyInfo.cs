@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EMS.DB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df05b2d44d28b2bc5f3192bf517c68ce8d23224f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8ef8d62af9782b7e762bdafa419d1b314a0d966")]
 [assembly: System.Reflection.AssemblyProductAttribute("EMS.DB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EMS.DB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

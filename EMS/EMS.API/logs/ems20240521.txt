@@ -92,3 +92,35 @@ WHERE [Id] = @p1;
 2024-05-21 13:19:09.361 +05:30 [INF] Executed action EMS.API.Controllers.LogOutController.LogOut (EMS.API) in 198.5802ms
 2024-05-21 13:19:09.362 +05:30 [INF] Executed endpoint 'EMS.API.Controllers.LogOutController.LogOut (EMS.API)'
 2024-05-21 13:19:09.362 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/LogOut/9 - 200 null application/json; charset=utf-8 376.8503ms
+2024-05-21 13:20:28.876 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-21 13:20:28.878 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 1.3808ms
+2024-05-21 13:20:28.894 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-21 13:20:28.895 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.5526ms
+2024-05-21 13:20:29.364 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-21 13:20:29.389 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.8228ms
+2024-05-21 13:20:34.446 +05:30 [INF] Application is shutting down...
+2024-05-21 13:57:22.568 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-21 13:57:22.872 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-21 13:57:22.880 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-21 13:57:22.882 +05:30 [INF] Hosting environment: Development
+2024-05-21 13:57:22.882 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API
+2024-05-21 13:57:25.411 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Login - application/json 49
+2024-05-21 13:57:25.478 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-21 13:57:25.544 +05:30 [INF] Executing endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-21 13:57:25.588 +05:30 [INF] Route matched with {action = "SignIn", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.API.TokenModel]] SignIn(EMS.DB.Models.UserLogin) on controller EMS.API.LoginController (EMS.API).
+2024-05-21 13:57:25.813 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-21 13:57:25.876 +05:30 [INF] Executed action EMS.API.LoginController.SignIn (EMS.API) in 281.7642ms
+2024-05-21 13:57:25.882 +05:30 [INF] Executed endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-21 13:57:25.888 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Login - 400 null application/problem+json; charset=utf-8 479.9148ms
+2024-05-21 13:57:41.145 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Login - application/json 7
+2024-05-21 13:57:41.151 +05:30 [INF] Executing endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-21 13:57:41.152 +05:30 [INF] Route matched with {action = "SignIn", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.API.TokenModel]] SignIn(EMS.DB.Models.UserLogin) on controller EMS.API.LoginController (EMS.API).
+2024-05-21 13:57:41.168 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-21 13:57:41.169 +05:30 [INF] Executed action EMS.API.LoginController.SignIn (EMS.API) in 17.1815ms
+2024-05-21 13:57:41.169 +05:30 [INF] Executed endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-21 13:57:41.170 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Login - 400 null application/problem+json; charset=utf-8 25.1916ms
+2024-05-21 14:07:17.744 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-21 14:07:17.891 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-21 14:07:17.894 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-21 14:07:17.895 +05:30 [INF] Hosting environment: Development
+2024-05-21 14:07:17.895 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API

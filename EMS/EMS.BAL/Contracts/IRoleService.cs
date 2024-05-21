@@ -8,6 +8,6 @@ namespace EMS.BAL
 {
     public interface IRoleService
     {
-        public bool Insert(RoleDetail role);
+        public Task<bool> Insert(RoleDetail role);
     }
 }

@@ -6,11 +6,11 @@ namespace EMS.DB.Models
 {
     public class UserLogin
     {
-        [Required(ErrorMessage = "EMAIL_IS_REQUIRED")]
-        [EmailAddress(ErrorMessage = "EMAIL_FORMAT_IS_INCORRECT")]
+        [Required(ErrorMessage = "EMAIL IS REQUIRED")]
+        [EmailAddress(ErrorMessage = "EMAIL FORMAT IS INCORRECT")]
         public string email { get; set; }
 
-        [Required(ErrorMessage = "PASSWORD_IS_REQUIRED")]
+        [Required(ErrorMessage = "PASSWORD IS REQUIRED")]
         public string password { get; set; }
     }
 }

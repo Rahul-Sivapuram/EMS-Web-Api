@@ -8,27 +8,27 @@ namespace EMS.DAL
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "FIRSTNAME_IS_REQUIRED")]
+        [Required(ErrorMessage = "FIRSTNAME IS REQUIRED")]
         public string FirstName { get; set; }
 
-        [Required(ErrorMessage = "LASTNAME_IS_REQUIRED")]
+        [Required(ErrorMessage = "LASTNAME IS REQUIRED")]
         public string LastName { get; set; }
 
-        [Required(ErrorMessage = "EMPLOYEENUMBER_IS_REQUIRED")]
+        [Required(ErrorMessage = "EMPLOYEENUMBER IS REQUIRED")]
         public string Uid { get; set; }
 
-        [Required(ErrorMessage = "EMAIL_IS_REQUIRED")]
-        [EmailAddress(ErrorMessage = "EMAIL_FORMAT_IS_INCORRECT")]
+        [Required(ErrorMessage = "EMAIL IS REQUIRED")]
+        [EmailAddress(ErrorMessage = "EMAIL FORMAT IS INCORRECT")]
         public string EmailId { get; set; }
 
-        [Required(ErrorMessage = "MOBILENUMBER_IS_REQUIRED_AND_GREATER_THAN_10")]
-        [RegularExpression(@"^\d{10}$", ErrorMessage = "MOBILENUMBER_FORMAT_IS_INCORRECT")]
+        [Required(ErrorMessage = "MOBILENUMBER IS REQUIRED AND GREATER THAN 10")]
+        [RegularExpression(@"^\d{10}$", ErrorMessage = "MOBILENUMBER FORMAT IS INCORRECT")]
         public long MobileNumber { get; set; }
 
-        [Required(ErrorMessage = "DATE_OF_BIRTH_IS_REQUIRED")]
+        [Required(ErrorMessage = "DATE OF BIRTH IS REQUIRED")]
         public string Dob { get; set; }
 
-        [Required(ErrorMessage = "JOININGDATE_IS_REQUIRED")]
+        [Required(ErrorMessage = "JOININGDATE IS REQUIRED")]
         public string JoiningDate { get; set; }
 
         public string? Location { get; set; }
@@ -41,7 +41,7 @@ namespace EMS.DAL
 
         public string? Project { get; set; }
 
-        [Required(ErrorMessage = "PASSWORD_IS_REQUIRED")]
+        [Required(ErrorMessage = "PASSWORD IS REQUIRED")]
         public string Password { get; set; }
 
         public bool IsActive{get;set;}

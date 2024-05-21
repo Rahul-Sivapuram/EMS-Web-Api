@@ -11,7 +11,7 @@ namespace EMS.DAL
         public string? LastName { get; set; }
         public string? Uid { get; set; }
 
-        [EmailAddress(ErrorMessage = "EMAIL_FORMAT_IS_INCORRECT")]
+        [EmailAddress(ErrorMessage = "EMAIL FORMAT IS INCORRECT")]
         public string? EmailId { get; set; }
         public long? MobileNumber { get; set; }
         public string? Dob { get; set; }

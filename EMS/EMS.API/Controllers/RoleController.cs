@@ -21,9 +21,9 @@ namespace EMS.API.Controllers
         }
 
         [HttpPost]
-        public ApiResponse<RoleDetail> AddRole([FromBody] RoleDetail role)
+        public async Task<ApiResponse<RoleDetail>> AddRole([FromBody] RoleDetail role)
         {
-            var res = _roleService.Insert(role);
+            var res =await _roleService.Insert(role);
             if(res)
             {
                 return new ApiResponse<RoleDetail>

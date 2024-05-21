@@ -8,6 +8,6 @@ namespace EMS.DAL
 {
     public interface IRoleRepository
     {
-        public bool AddRole(RoleDetail role);
+        public Task<bool> AddRole(RoleDetail role);
     }
 }
