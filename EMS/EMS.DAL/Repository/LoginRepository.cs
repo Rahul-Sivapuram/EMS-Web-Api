@@ -8,6 +8,8 @@ using System.Security.Claims;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace EMS.DAL
 {
@@ -22,10 +24,10 @@ namespace EMS.DAL
             _configuration = configuration;
         }
 
-        public string LoginUser(UserLogin user)
+        public async Task<string> LoginUser(UserLogin user)
         {
             string token = "";
-            List<Employee> existingusers = _context.Employees.ToList();
+            List<Employee> existingusers = await _context.Employees.ToListAsync();
             foreach (Employee i in existingusers)
             {
 
@@ -33,21 +35,21 @@ namespace EMS.DAL
                 {
                     token = CreateToken(user, i);
                     i.IsActive = true;
-                    _context.SaveChanges();
+                    await _context.SaveChangesAsync();
                 }
             }
             return token;
         }
 
-         public bool LogOut(int id)
+         public async Task<bool> LogOut(int id)
         {
-            List<Employee> existingusers = _context.Employees.ToList();
+            List<Employee> existingusers = await _context.Employees.ToListAsync();
             foreach (Employee i in existingusers)
             {
                 if (i.Id == id)
                 {
                     i.IsActive = false;
-                    _context.SaveChanges();
+                    await _context.SaveChangesAsync();
                 }
             }
             return true;

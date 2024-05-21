@@ -6298,11 +6298,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Documents\\rahul\\EMS\\EMS.API\\EMS.API.csproj",
+      "projectUniqueName": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.API\\EMS.API.csproj",
       "projectName": "EMS.API",
-      "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Documents\\rahul\\EMS\\EMS.API\\EMS.API.csproj",
+      "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.API\\EMS.API.csproj",
       "packagesPath": "C:\\Users\\rahul.sivapuram\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Documents\\rahul\\EMS\\EMS.API\\obj\\",
+      "outputPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rahul.sivapuram\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6317,8 +6317,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Documents\\rahul\\EMS\\EMS.BAL\\EMS.BAL.csproj": {
-              "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Documents\\rahul\\EMS\\EMS.BAL\\EMS.BAL.csproj"
+            "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.BAL\\EMS.BAL.csproj": {
+              "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.BAL\\EMS.BAL.csproj"
             }
           }
         }

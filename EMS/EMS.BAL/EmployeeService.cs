@@ -20,11 +20,11 @@ namespace EMS.BAL
             _logger = logger;
         }
 
-        public EmployeeDetail GetEmployeeById(int id)
+        public async Task<EmployeeDetail> GetEmployeeById(int id)
         {
             try
             {
-                return _employeeRepository.GetEmployee(id);
+                return await _employeeRepository.GetEmployee(id);
             }
             catch (Exception ex)
             {
@@ -33,11 +33,11 @@ namespace EMS.BAL
             }
         }
 
-        public int AddEmployee(EmployeeDetail employee)
+        public async Task<int> AddEmployee(EmployeeDetail employee)
         {
             try
             {
-                return _employeeRepository.Add(employee);
+                return await _employeeRepository.Add(employee);
             }
             catch (Exception e)
             {
@@ -46,11 +46,11 @@ namespace EMS.BAL
             }
         }
         
-        public bool UpdateEmployee(int id, EmployeeDTO employee)
+        public async Task<bool> UpdateEmployee(int id, EmployeeDTO employee)
         {
             try
             {
-                return _employeeRepository.Update(id, employee);
+                return await _employeeRepository.Update(id, employee);
             }
             catch (Exception e)
             {
@@ -60,11 +60,11 @@ namespace EMS.BAL
         }
 
 
-        public bool DeleteEmployee(int id)
+        public async Task<bool> DeleteEmployee(int id)
         {
             try
             {
-                return _employeeRepository.Delete(id);
+                return await _employeeRepository.Delete(id);
             }
             catch (Exception e)
             {
@@ -73,11 +73,11 @@ namespace EMS.BAL
             }
         }
 
-        public List<EmployeeDetail> GetEmployees(EmployeeFilter query)
+        public async Task<List<EmployeeDetail>> GetEmployees(EmployeeFilter query)
         {
             try
             {
-                return _employeeRepository.Filter(query);
+                return await _employeeRepository.Filter(query);
             }
             catch (Exception e)
             {

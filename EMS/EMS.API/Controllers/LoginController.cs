@@ -20,9 +20,9 @@ namespace EMS.API
         }
 
         [HttpPost()]
-        public ApiResponse<TokenModel> SignIn([FromBody] UserLogin user)
+        public async Task<ApiResponse<TokenModel>> SignIn([FromBody] UserLogin user)
         {
-            string res = _loginService.Login(user);
+            string res = await _loginService.Login(user);
             List<TokenModel> data = new List<TokenModel>() { new TokenModel() { UserEmail = user.email, UserToken = res } };
 
             return !string.IsNullOrEmpty(res) ? new ApiResponse<TokenModel> { Status = StatusCodes.SUCCESS.ToString(), Data = data }

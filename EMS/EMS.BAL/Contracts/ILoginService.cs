@@ -8,7 +8,7 @@ namespace EMS.BAL
 {
     public interface ILoginService
     {
-        public string Login(UserLogin user);
-        public bool LogOut(int id);
+        public Task<string> Login(UserLogin user);
+        public Task<bool> LogOut(int id);
     }
 }

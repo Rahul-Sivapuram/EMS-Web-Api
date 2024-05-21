@@ -8,7 +8,7 @@ namespace EMS.BAL
 {
     public interface IRegisterService
     {
-        public bool AddUser(RegisterDTO user);
+        public Task<bool> AddUser(RegisterDTO user);
 
     }
 }

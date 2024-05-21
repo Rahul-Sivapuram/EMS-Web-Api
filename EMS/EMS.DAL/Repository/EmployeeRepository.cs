@@ -2,8 +2,10 @@ using System;
 using EMS.DB;
 using EMS.DB.Models;
 using System.Text.RegularExpressions;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
 
 
@@ -17,17 +19,16 @@ namespace EMS.DAL
             _context = context;
         }
 
-        public List<EmployeeDetail> Get(int pageNumber, int pageSize)
+        public async Task<List<EmployeeDetail>> Get(int pageNumber, int pageSize)
         {
-            var res = _context.EmployeeDetails.Skip((pageNumber - 1) * pageSize)
-            .Take(pageSize).ToList();
-
+            var res = await _context.EmployeeDetails.Skip((pageNumber - 1) * pageSize)
+            .Take(pageSize).ToListAsync();
             return res;
         }
 
-        public EmployeeDetail GetEmployee(int id)
+        public async Task<EmployeeDetail> GetEmployee(int id)
         {
-            var employee = _context.EmployeeDetails.FirstOrDefault(x => x.Id == id);
+            var employee = await _context.EmployeeDetails.FirstOrDefaultAsync(x => x.Id == id);
             if (employee is null)
             {
                 return null;
@@ -35,18 +36,26 @@ namespace EMS.DAL
             return employee;
         }
 
-        public int Add(EmployeeDetail employee)
+        public async Task<int> Add(EmployeeDetail employee)
         {
-            Employee newEmp = Mapper.EDToEmployee(employee, _context.Locations.ToList(), _context.Roles.ToList(),
-            _context.Departments.ToList(), _context.EmployeeDetails.ToList(), _context.Projects.ToList(),_context.Modes.ToList());
-            _context.Employees.Add(newEmp);
-            _context.SaveChanges();
-            return employee.Id;
+            int? LocationId = (await _context.Locations.FirstOrDefaultAsync(s => s.Name == employee.Location))?.Id;
+            int? RoleId = (await _context.Roles.FirstOrDefaultAsync(s => s.Name == employee.Role))?.Id;
+            int? DepartmentId = (await _context.Departments.FirstOrDefaultAsync(s => s.Name == employee.Department))?.Id;
+            bool IsManager = string.IsNullOrEmpty(employee.Manager);
+            int? ManagerId = string.IsNullOrEmpty(employee.Manager) ? null : (await _context.EmployeeDetails.FirstOrDefaultAsync(s => (employee.FirstName + " " + employee.LastName) == employee.Manager))?.Id;
+            int? ProjectId = (await _context.Projects.FirstOrDefaultAsync(s => s.Name == employee.Project))?.Id;
+            int ModeId = (await _context.Modes.FirstAsync(s => s.Name == employee.ModelStatus)).Id;
+
+            Employee newEmp = Mapper.EDToEmployee(employee, LocationId, RoleId, DepartmentId, IsManager, ManagerId, ProjectId, ModeId);
+            await _context.Employees.AddAsync(newEmp);
+            await _context.SaveChangesAsync();
+            return newEmp.Id;
         }
 
-        public bool Update(int id, EmployeeDTO request)
+
+        public async Task<bool> Update(int id, EmployeeDTO request)
         {
-            var res = _context.Employees.FirstOrDefault(x => x.Id == id);
+            var res = await _context.Employees.FirstOrDefaultAsync(x => x.Id == id);
             if (res is null)
             {
                 return false;
@@ -85,23 +94,23 @@ namespace EMS.DAL
 
                 if (!string.IsNullOrEmpty(request.Location))
                 {
-                    res.LocationId = _context.Locations.FirstOrDefault(s => s.Name == request.Location)?.Id;
+                    res.LocationId = (await _context.Locations.FirstOrDefaultAsync(s => s.Name == request.Location))?.Id;
                 }
 
                 if (!string.IsNullOrEmpty(request.Role))
                 {
-                    res.RoleId = _context.Roles.FirstOrDefault(s => s.Name == request.Role)?.Id;
+                    res.RoleId = (await _context.Roles.FirstOrDefaultAsync(s => s.Name == request.Role))?.Id;
                 }
 
                 if (!string.IsNullOrEmpty(request.Department))
                 {
-                    res.DepartmentId = _context.Departments.FirstOrDefault(s => s.Name == request.Department)?.Id;
+                    res.DepartmentId = (await _context.Departments.FirstOrDefaultAsync(s => s.Name == request.Department))?.Id;
                 }
 
                 if (!string.IsNullOrEmpty(request.Manager))
                 {
                     res.IsManager = false;
-                    res.ManagerId = _context.EmployeeDetails.FirstOrDefault(s => (s.FirstName + " " + s.LastName) == request.Manager)?.Id;
+                    res.ManagerId = (await _context.EmployeeDetails.FirstOrDefaultAsync(s => (s.FirstName + " " + s.LastName) == request.Manager))?.Id;
                 }
                 else
                 {
@@ -111,21 +120,21 @@ namespace EMS.DAL
 
                 if (!string.IsNullOrEmpty(request.Project))
                 {
-                    res.ProjectId = _context.Projects.FirstOrDefault(s => s.Name == request.Project)?.Id;
+                    res.ProjectId = (await _context.Projects.FirstOrDefaultAsync(s => s.Name == request.Project))?.Id;
                 }
                 if (!string.IsNullOrEmpty(request.ModelStatus))
                 {
-                    res.ModeId = _context.Modes.FirstOrDefault(s => s.Name == request.ModelStatus).Id;
+                    res.ModeId = (await _context.Modes.FirstOrDefaultAsync(s => s.Name == request.ModelStatus)).Id;
                 }
 
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
                 return true;
             }
         }
 
-        public bool Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            var employee = _context.Employees.FirstOrDefault(x => x.Id == id);
+            var employee = await _context.Employees.FirstOrDefaultAsync(x => x.Id == id);
             if (employee is null)
             {
                 return false;
@@ -133,16 +142,16 @@ namespace EMS.DAL
             else
             {
                 _context.Employees.Remove(employee);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
                 return true;
             }
         }
 
-        public List<EmployeeDetail> Filter(EmployeeFilter query)
+        public async Task<List<EmployeeDetail>> Filter(EmployeeFilter query)
         {
             if (query == null || query.IsEmpty())
             {
-                return Get(query.PageNumber, query.PageSize);
+                return await Get(query.PageNumber, query.PageSize);
             }
             else
             {
@@ -178,12 +187,12 @@ namespace EMS.DAL
                     queryableEmployees = queryableEmployees.Where(emp => emp.Project == query.Project);
                 }
 
-                var filteredEmployees = queryableEmployees.ToList();
+                var filteredEmployees = await queryableEmployees
+                .Skip((query.PageNumber - 1) * query.PageSize)
+                .Take(query.PageSize)
+                .ToListAsync();
 
-
-                return filteredEmployees.Count > 0
-                    ? filteredEmployees.Skip((query.PageNumber - 1) * query.PageSize).Take(query.PageSize).ToList()
-                    : null;
+                return filteredEmployees;
 
             }
         }

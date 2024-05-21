@@ -16,11 +16,11 @@ namespace EMS.BAL
             _logger = logger;
         }
 
-        public bool AddUser(RegisterDTO user)
+        public async Task<bool> AddUser(RegisterDTO user)
         {
             try
             {
-                return _registerRepository.RegisterUser(user);
+                return await _registerRepository.RegisterUser(user);
             }
             catch (Exception e)
             {

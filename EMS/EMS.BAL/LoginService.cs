@@ -18,11 +18,11 @@ namespace EMS.BAL
             _logger = logger;
         }
 
-        public string Login(UserLogin user)
+        public async Task<string> Login(UserLogin user)
         {
             try
             {
-                return _loginRepository.LoginUser(user);
+                return await _loginRepository.LoginUser(user);
             }
             catch (Exception e)
             {
@@ -30,11 +30,11 @@ namespace EMS.BAL
                 throw;
             }
         }
-        public bool LogOut(int id)
+        public async Task<bool> LogOut(int id)
         {
             try
             {
-                return _loginRepository.LogOut(id);
+                return await _loginRepository.LogOut(id);
             }
             catch (Exception e)
             {

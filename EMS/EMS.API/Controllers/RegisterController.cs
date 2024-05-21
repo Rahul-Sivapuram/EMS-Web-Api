@@ -18,9 +18,9 @@ namespace EMS.API
         }
 
         [HttpPost()]
-        public ApiResponse<RegisterDTO> RegisterUser(RegisterDTO user)
+        public async Task<ApiResponse<RegisterDTO>> RegisterUser(RegisterDTO user)
         {
-                var res = _registerService.AddUser(user);
+                var res =await _registerService.AddUser(user);
                 return res ? new ApiResponse<RegisterDTO> { Status = StatusCodes.SUCCESS.ToString(), } 
                 :new ApiResponse<RegisterDTO> { Status = StatusCodes.FAIL.ToString(), ErrorCode = ErrorCodes.REGISTRATION_FAILED.ToString() };
           

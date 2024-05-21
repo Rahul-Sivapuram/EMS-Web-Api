@@ -10,11 +10,11 @@ namespace EMS.BAL
 {
     public interface IEmployeeService
     {
-        EmployeeDetail GetEmployeeById(int id);
-        int AddEmployee(EmployeeDetail employee);
-        bool UpdateEmployee(int id,EmployeeDTO employee);
-        bool DeleteEmployee(int id);
-        List<EmployeeDetail> GetEmployees(EmployeeFilter userquery);
+        Task<EmployeeDetail> GetEmployeeById(int id);
+        Task<int> AddEmployee(EmployeeDetail employee);
+        Task<bool> UpdateEmployee(int id,EmployeeDTO employee);
+        Task<bool> DeleteEmployee(int id);
+        Task<List<EmployeeDetail>> GetEmployees(EmployeeFilter userquery);
 
     }
 }

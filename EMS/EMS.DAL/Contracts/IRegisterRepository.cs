@@ -8,6 +8,6 @@ namespace EMS.DAL
 {
     public interface IRegisterRepository
     {
-        public bool RegisterUser(RegisterDTO user);
+        public Task<bool> RegisterUser(RegisterDTO user);
     }
 }

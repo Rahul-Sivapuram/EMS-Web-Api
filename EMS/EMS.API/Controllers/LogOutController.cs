@@ -21,12 +21,12 @@ namespace EMS.API.Controllers
 
         [Authorize]
         [HttpGet("{id:int}")]
-        public ApiResponse<TokenModel> LogOut(int id)
+        public async Task<ApiResponse<TokenModel>> LogOut(int id)
         {
             var userId = User.FindFirstValue("Id");
             if (id != null && userId == id.ToString())
             {
-                bool res = _loginService.LogOut(id);
+                bool res = await _loginService.LogOut(id);
                 return new ApiResponse<TokenModel> { Status = StatusCodes.SUCCESS.ToString() };
             }
             else

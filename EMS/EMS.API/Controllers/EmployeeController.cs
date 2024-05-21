@@ -20,10 +20,10 @@ namespace EMS.API
 
         [Authorize]
         [HttpGet("{id:int}")]
-        public ApiResponse<EmployeeDetail> GetByID(int id)
+        public async Task<ApiResponse<EmployeeDetail>> GetByID(int id)
         {
             var userId = User.FindFirstValue("Id");
-            var employee = _employeeservice.GetEmployeeById(id);
+            var employee = await _employeeservice.GetEmployeeById(id);
             var response = Validations.ValidateLoggedInUser(id, userId, employee, false,null);
             if (response == null)
             {
@@ -36,16 +36,16 @@ namespace EMS.API
         }
 
         [HttpPost()]
-        public ApiResponse<EmployeeDetail> Insert(EmployeeDetail employee)
+        public async Task<ApiResponse<EmployeeDetail>> Insert(EmployeeDetail employee)
         {
-            var res = _employeeservice.AddEmployee(employee);
+            var res = await _employeeservice.AddEmployee(employee);
             return res != null ? new ApiResponse<EmployeeDetail> { Status = StatusCodes.SUCCESS.ToString(), }
             : new ApiResponse<EmployeeDetail> { Status = StatusCodes.FAIL.ToString(), ErrorCode = ErrorCodes.INSERTION_FAILED.ToString(), };
         }
 
         [Authorize]
         [HttpPut("{id:int}")]
-        public ApiResponse<EmployeeDetail> Update(int id, EmployeeDTO request)
+        public async Task<ApiResponse<EmployeeDetail>> Update(int id, EmployeeDTO request)
         {
             var userId = User.FindFirstValue("Id");
             var response = Validations.ValidateLoggedInUser(id, userId, null, true,request);
@@ -54,14 +54,14 @@ namespace EMS.API
                 return response;
             }
 
-            return _employeeservice.UpdateEmployee(id, request)
+            return await _employeeservice.UpdateEmployee(id, request)
                 ? new ApiResponse<EmployeeDetail> { Status = StatusCodes.SUCCESS.ToString() }
                 : new ApiResponse<EmployeeDetail> { Status = StatusCodes.FAIL.ToString(), ErrorCode = ErrorCodes.UPDATE_FAILED.ToString() };
         }
 
         [Authorize]
         [HttpDelete("{id:int}")]
-        public ApiResponse<EmployeeDetail> Delete(int id)
+        public async Task<ApiResponse<EmployeeDetail>> Delete(int id)
         {
             var userId = User.FindFirstValue("Id");
             var response = Validations.ValidateAuthorization(id, userId);
@@ -71,15 +71,15 @@ namespace EMS.API
                 return response;
             }
 
-            return _employeeservice.DeleteEmployee(id)
+            return await _employeeservice.DeleteEmployee(id)
                 ? new ApiResponse<EmployeeDetail> { Status = StatusCodes.SUCCESS.ToString() }
                 : new ApiResponse<EmployeeDetail> { Status = StatusCodes.FAIL.ToString(), ErrorCode = ErrorCodes.DELETION_FAILED.ToString() };
         }
 
         [HttpGet]
-        public ApiResponse<EmployeeDetail> Get([FromQuery] EmployeeFilter query)
+        public async Task<ApiResponse<EmployeeDetail>> Get([FromQuery] EmployeeFilter query)
         {
-            var empdata = _employeeservice.GetEmployees(query);
+            var empdata = await _employeeservice.GetEmployees(query);
             return empdata.Count > 0 ? new ApiResponse<EmployeeDetail> { Status = "success", Data = empdata, }
             :new ApiResponse<EmployeeDetail>{Status = "fail",ErrorCode = ErrorCodes.NO_DATA.ToString()};
         }
