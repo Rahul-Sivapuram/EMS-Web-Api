@@ -939,3 +939,107 @@ drop view EmployeeDetails
 2024-05-22 13:01:52.892 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
 VALUES (N'20240522065108_modestable', N'8.0.4');
+2024-05-22 13:02:50.889 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-22 13:02:51.059 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-22 13:02:51.064 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-22 13:02:51.065 +05:30 [INF] Hosting environment: Development
+2024-05-22 13:02:51.065 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API
+2024-05-22 13:03:56.786 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-22 13:03:57.083 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 304.9712ms
+2024-05-22 13:03:57.098 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-22 13:03:57.107 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 8.2104ms
+2024-05-22 13:03:57.315 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-22 13:03:57.629 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 313.5797ms
+2024-05-22 13:04:03.227 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-22 13:04:03.229 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 2.1875ms
+2024-05-22 13:04:03.264 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-22 13:04:03.264 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.5042ms
+2024-05-22 13:04:03.473 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-22 13:04:03.490 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.8711ms
+2024-05-22 13:07:38.805 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Register - application/json 417
+2024-05-22 13:07:38.811 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-22 13:07:38.870 +05:30 [INF] Executing endpoint 'EMS.API.RegisterController.RegisterUser (EMS.API)'
+2024-05-22 13:07:38.927 +05:30 [INF] Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DAL.RegisterDTO]] RegisterUser(EMS.DAL.RegisterDTO) on controller EMS.API.RegisterController (EMS.API).
+2024-05-22 13:07:42.613 +05:30 [INF] Executed DbCommand (116ms) [Parameters=[@__user_Location_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[Name]
+FROM [Location] AS [l]
+WHERE [l].[Name] = @__user_Location_0
+2024-05-22 13:07:42.795 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__user_Role_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[DepartmentId], [r].[Description], [r].[EmployeeId], [r].[LocationId], [r].[Name]
+FROM [Roles] AS [r]
+WHERE [r].[Name] = @__user_Role_0
+2024-05-22 13:07:42.843 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__user_Department_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Name]
+FROM [Department] AS [d]
+WHERE [d].[Name] = @__user_Department_0
+2024-05-22 13:07:42.876 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__user_Project_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Project] AS [p]
+WHERE [p].[Name] = @__user_Project_0
+2024-05-22 13:07:42.932 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__user_ModeStatus_0='?' (Size = 70) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Name]
+FROM [Modes] AS [m]
+WHERE [m].[Name] = @__user_ModeStatus_0
+2024-05-22 13:07:44.729 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Date), @p2='?' (Size = 256) (DbType = AnsiString), @p3='?' (Size = 8000) (DbType = AnsiString), @p4='?' (DbType = Boolean), @p5='?' (DbType = Date), @p6='?' (Size = 8000) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (DbType = Int32), @p11='?' (Size = 450), @p12='?' (DbType = Int32), @p13='?' (DbType = Int32), @p14='?' (Size = 6) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([DepartmentId], [DOB], [EmailId], [FirstName], [IsManager], [JoiningDate], [LastName], [LocationId], [ManagerId], [MobileNumber], [ModeId], [Password], [ProjectId], [RoleId], [Uid])
+OUTPUT INSERTED.[Id], INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-05-22 13:07:44.821 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DAL.RegisterDTO, EMS.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-22 13:07:44.838 +05:30 [INF] Executed action EMS.API.RegisterController.RegisterUser (EMS.API) in 5904.1931ms
+2024-05-22 13:07:44.839 +05:30 [INF] Executed endpoint 'EMS.API.RegisterController.RegisterUser (EMS.API)'
+2024-05-22 13:07:44.843 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Register - 200 null application/json; charset=utf-8 6038.5948ms
+2024-05-22 13:09:13.195 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Register - application/json 429
+2024-05-22 13:09:13.198 +05:30 [INF] Executing endpoint 'EMS.API.RegisterController.RegisterUser (EMS.API)'
+2024-05-22 13:09:13.199 +05:30 [INF] Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DAL.RegisterDTO]] RegisterUser(EMS.DAL.RegisterDTO) on controller EMS.API.RegisterController (EMS.API).
+2024-05-22 13:09:13.231 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__user_Location_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[Name]
+FROM [Location] AS [l]
+WHERE [l].[Name] = @__user_Location_0
+2024-05-22 13:09:13.262 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@__user_Role_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[DepartmentId], [r].[Description], [r].[EmployeeId], [r].[LocationId], [r].[Name]
+FROM [Roles] AS [r]
+WHERE [r].[Name] = @__user_Role_0
+2024-05-22 13:09:13.274 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__user_Department_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Name]
+FROM [Department] AS [d]
+WHERE [d].[Name] = @__user_Department_0
+2024-05-22 13:09:13.336 +05:30 [INF] Executed DbCommand (49ms) [Parameters=[@__user_Project_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Project] AS [p]
+WHERE [p].[Name] = @__user_Project_0
+2024-05-22 13:09:13.405 +05:30 [INF] Executed DbCommand (67ms) [Parameters=[@__user_ModeStatus_0='?' (Size = 70) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Name]
+FROM [Modes] AS [m]
+WHERE [m].[Name] = @__user_ModeStatus_0
+2024-05-22 13:09:14.013 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Date), @p2='?' (Size = 256) (DbType = AnsiString), @p3='?' (Size = 8000) (DbType = AnsiString), @p4='?' (DbType = Boolean), @p5='?' (DbType = Date), @p6='?' (Size = 8000) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (DbType = Int32), @p11='?' (Size = 450), @p12='?' (DbType = Int32), @p13='?' (DbType = Int32), @p14='?' (Size = 6) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([DepartmentId], [DOB], [EmailId], [FirstName], [IsManager], [JoiningDate], [LastName], [LocationId], [ManagerId], [MobileNumber], [ModeId], [Password], [ProjectId], [RoleId], [Uid])
+OUTPUT INSERTED.[Id], INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-05-22 13:09:14.015 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DAL.RegisterDTO, EMS.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-22 13:09:14.015 +05:30 [INF] Executed action EMS.API.RegisterController.RegisterUser (EMS.API) in 816.2138ms
+2024-05-22 13:09:14.015 +05:30 [INF] Executed endpoint 'EMS.API.RegisterController.RegisterUser (EMS.API)'
+2024-05-22 13:09:14.015 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Register - 200 null application/json; charset=utf-8 820.4261ms
+2024-05-22 13:09:19.487 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-05-22 13:09:19.490 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-22 13:09:19.498 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-22 13:09:19.517 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-22 13:09:19.518 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-22 13:09:19.567 +05:30 [INF] Executed DbCommand (40ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-22 13:09:19.609 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-22 13:09:19.619 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 120.7758ms
+2024-05-22 13:09:19.619 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-22 13:09:19.620 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 132.9042ms
+2024-05-22 13:09:45.559 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-22 13:09:45.561 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 1.7153ms
+2024-05-22 13:09:45.587 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-22 13:09:45.587 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.3066ms
+2024-05-22 13:09:45.746 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-22 13:09:45.761 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.5437ms
