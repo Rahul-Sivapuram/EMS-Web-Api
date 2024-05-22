@@ -35,9 +35,9 @@ public partial class Employee
 
     public string? Password { get; set; }
 
-    public bool IsActive{get;set;}
+    public bool IsActive { get; set; }
 
-    public int ModeId{get;set;}
+    public int ModeId { get; set; }
 
     public virtual Department? Department { get; set; }
 
@@ -48,7 +48,7 @@ public partial class Employee
     public virtual Employee? Manager { get; set; }
 
     public virtual Project? Project { get; set; }
-    public virtual Mode Modes { get; set; } 
+    public virtual Mode Modes { get; set; }
     public virtual Role? Role { get; set; }
     public virtual ICollection<Role> Roles { get; set; } = new List<Role>();
 

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EMS.DB.Migrations
 {
     [DbContext(typeof(EmployeeDBContext))]
-    [Migration("20240517082329_ModesTable")]
-    partial class ModesTable
+    [Migration("20240522064649_viewactivemode")]
+    partial class viewactivemode
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,6 +21,9 @@ namespace EMS.DB.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "8.0.4")
+                .HasAnnotation("Proxies:ChangeTracking", false)
+                .HasAnnotation("Proxies:CheckEquality", false)
+                .HasAnnotation("Proxies:LazyLoading", true)
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -42,6 +45,28 @@ namespace EMS.DB.Migrations
                         .HasName("PK__Departme__3214EC07E1001716");
 
                     b.ToTable("Department", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "UIUX"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "PRODUCT ENGINEERING"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "QUALITY ANALYST"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "IT"
+                        });
                 });
 
             modelBuilder.Entity("EMS.DB.Models.Employee", b =>
@@ -95,6 +120,9 @@ namespace EMS.DB.Migrations
                     b.Property<long?>("MobileNumber")
                         .HasColumnType("bigint");
 
+                    b.Property<int>("ModeId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(450)");
 
@@ -118,6 +146,8 @@ namespace EMS.DB.Migrations
                     b.HasIndex("LocationId");
 
                     b.HasIndex("ManagerId");
+
+                    b.HasIndex("ModeId");
 
                     b.HasIndex("Password")
                         .IsUnique()
@@ -181,6 +211,10 @@ namespace EMS.DB.Migrations
                     b.Property<long>("MobileNumber")
                         .HasColumnType("bigint");
 
+                    b.Property<string>("ModelStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Project")
                         .HasColumnType("nvarchar(max)");
 
@@ -215,6 +249,28 @@ namespace EMS.DB.Migrations
                         .HasName("PK__Location__3214EC079248A117");
 
                     b.ToTable("Location", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Hyderabad"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Mumbai"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Bangalore"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Delhi"
+                        });
                 });
 
             modelBuilder.Entity("EMS.DB.Models.Mode", b =>
@@ -234,6 +290,23 @@ namespace EMS.DB.Migrations
                         .HasName("PK__Mode");
 
                     b.ToTable("Modes", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Active"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Do Not Disturb"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Sleep"
+                        });
                 });
 
             modelBuilder.Entity("EMS.DB.Models.Project", b =>
@@ -253,6 +326,23 @@ namespace EMS.DB.Migrations
                         .HasName("PK__Project__3214EC07C8DC1C01");
 
                     b.ToTable("Project", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "AMAZON"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "MYNTRA"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "CISCO"
+                        });
                 });
 
             modelBuilder.Entity("EMS.DB.Models.Role", b =>
@@ -291,6 +381,64 @@ namespace EMS.DB.Migrations
                     b.HasIndex("LocationId");
 
                     b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DepartmentId = 1,
+                            Description = "uiux designer",
+                            Name = "UIUX DESIGNER"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DepartmentId = 2,
+                            Name = "FULL STACK DEVELOPER"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            DepartmentId = 4,
+                            Description = "backend developer",
+                            Name = "BACKEND DEVELOPER"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            DepartmentId = 4,
+                            Name = "ASSISTANT BACKEND DEVELOPER"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            DepartmentId = 1,
+                            Name = "FRONT END DEVELOPER"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            DepartmentId = 4,
+                            Name = "CUSTOMER SERVICE MANAGER"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            DepartmentId = 4,
+                            Name = "CUSTOMER SUPPORT"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            DepartmentId = 4,
+                            Name = "SOLUTION ARCHITECT"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            DepartmentId = 4,
+                            Name = "DOT NET DEVELOPER"
+                        });
                 });
 
             modelBuilder.Entity("EMS.DB.Models.Employee", b =>
@@ -310,6 +458,13 @@ namespace EMS.DB.Migrations
                         .HasForeignKey("ManagerId")
                         .HasConstraintName("FK__Employee__Manage__00200768");
 
+                    b.HasOne("EMS.DB.Models.Mode", "Modes")
+                        .WithMany("Employees")
+                        .HasForeignKey("ModeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK__Employee__Modes");
+
                     b.HasOne("EMS.DB.Models.Project", "Project")
                         .WithMany("Employees")
                         .HasForeignKey("ProjectId")
@@ -325,6 +480,8 @@ namespace EMS.DB.Migrations
                     b.Navigation("Location");
 
                     b.Navigation("Manager");
+
+                    b.Navigation("Modes");
 
                     b.Navigation("Project");
 
@@ -374,6 +531,11 @@ namespace EMS.DB.Migrations
                     b.Navigation("Employees");
 
                     b.Navigation("Roles");
+                });
+
+            modelBuilder.Entity("EMS.DB.Models.Mode", b =>
+                {
+                    b.Navigation("Employees");
                 });
 
             modelBuilder.Entity("EMS.DB.Models.Project", b =>

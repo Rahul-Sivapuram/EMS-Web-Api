@@ -13,7 +13,7 @@ namespace EMS.API.Helpers
     {
         public static void RegisterDbContext(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<EmployeeDBContext>();
+            services.AddDbContext<EmployeeDBContext>(options => options.UseLazyLoadingProxies().UseSqlServer(configuration.GetConnectionString("DefaultConnection")),ServiceLifetime.Singleton);
         }
     }
 }

@@ -31,13 +31,13 @@ namespace EMS.DB
 
         public DbSet<Mode> Modes { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            var config=new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
-            var configsection = config.GetSection("ConnectionStrings");
+        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        // {
+        //     var config=new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+        //     var configsection = config.GetSection("ConnectionStrings");
 
-            optionsBuilder.UseSqlServer(configsection["DefaultConnection"] ?? null);
-        }
+        //     optionsBuilder.UseSqlServer(configsection["DefaultConnection"] ?? null);
+        // }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Department>(entity =>
@@ -50,6 +50,13 @@ namespace EMS.DB
                     .HasMaxLength(30)
                     .IsUnicode(false);
             });
+            modelBuilder.Entity<Department>().HasData(
+                new Department { Id = 1, Name = "UIUX" },
+                new Department { Id = 2, Name = "PRODUCT ENGINEERING" },
+                new Department { Id = 3, Name = "QUALITY ANALYST" },
+                new Department { Id = 4, Name = "IT" }
+            );
+
 
             modelBuilder.Entity<Employee>(entity =>
             {
@@ -94,7 +101,7 @@ namespace EMS.DB
                     .HasConstraintName("FK__Employee__RoleId__02084FDA");
 
                 entity.HasIndex(e => e.Password).IsUnique();
-                entity.Property(e => e.IsActive).HasDefaultValue(false);
+               entity.Property(e => e.IsActive).HasDefaultValue(false);
 
                 entity.HasOne(d => d.Modes).WithMany(p => p.Employees)
                 .HasForeignKey(d => d.ModeId)
@@ -111,6 +118,11 @@ namespace EMS.DB
                    .HasMaxLength(70)
                    .IsUnicode(false);
            });
+            modelBuilder.Entity<Mode>().HasData(
+                new Mode { Id = 1, Name = "Active" },
+                new Mode { Id = 2, Name = "Do Not Disturb" },
+                new Mode { Id = 3, Name = "Sleep" }
+            );
 
             modelBuilder.Entity<EmployeeDetail>().ToView(nameof(EmployeeDetails));
 
@@ -124,6 +136,12 @@ namespace EMS.DB
                     .HasMaxLength(30)
                     .IsUnicode(false);
             });
+            modelBuilder.Entity<Location>().HasData(
+                new Location { Id = 1, Name = "Hyderabad" },
+                new Location { Id = 2, Name = "Mumbai" },
+                new Location { Id = 3, Name = "Bangalore" },
+                new Location { Id = 4, Name = "Delhi" }
+            );
 
             modelBuilder.Entity<Project>(entity =>
             {
@@ -135,6 +153,12 @@ namespace EMS.DB
                     .HasMaxLength(30)
                     .IsUnicode(false);
             });
+            modelBuilder.Entity<Project>().HasData(
+               new Project { Id = 1, Name = "AMAZON" },
+               new Project { Id = 2, Name = "MYNTRA" },
+               new Project { Id = 3, Name = "CISCO" }
+           );
+
 
             modelBuilder.Entity<Role>(entity =>
             {
@@ -159,7 +183,17 @@ namespace EMS.DB
                    .HasForeignKey(d => d.EmployeeId)
                    .HasConstraintName("FK__Role__Employee");
             });
-
+            modelBuilder.Entity<Role>().HasData(
+            new Role { Id = 1, Name = "UIUX DESIGNER", DepartmentId = 1, Description = "uiux designer", EmployeeId = null, LocationId = null },
+            new Role { Id = 2, Name = "FULL STACK DEVELOPER", DepartmentId = 2, Description = null, EmployeeId = null, LocationId = null },
+            new Role { Id = 3, Name = "BACKEND DEVELOPER", DepartmentId = 4, Description = "backend developer", EmployeeId = null, LocationId = null },
+            new Role { Id = 4, Name = "ASSISTANT BACKEND DEVELOPER", DepartmentId = 4, Description = null, EmployeeId = null, LocationId = null },
+            new Role { Id = 5, Name = "FRONT END DEVELOPER", DepartmentId = 1, Description = null, EmployeeId = null, LocationId = null },
+            new Role { Id = 6, Name = "CUSTOMER SERVICE MANAGER", DepartmentId = 4, Description = null, EmployeeId = null, LocationId = null },
+            new Role { Id = 7, Name = "CUSTOMER SUPPORT", DepartmentId = 4, Description = null, EmployeeId = null, LocationId = null },
+            new Role { Id = 8, Name = "SOLUTION ARCHITECT", DepartmentId = 4, Description = null, EmployeeId = null, LocationId = null },
+            new Role { Id = 9, Name = "DOT NET DEVELOPER", DepartmentId = 4, Description = null, EmployeeId = null, LocationId = null }
+        );
 
             OnModelCreatingPartial(modelBuilder);
         }

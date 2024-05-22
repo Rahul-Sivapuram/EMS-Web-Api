@@ -499,3 +499,5 @@ C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\
 C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API\obj\Debug\net8.0\EMS.API.pdb
 C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API\obj\Debug\net8.0\EMS.API.genruntimeconfig.cache
 C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API\obj\Debug\net8.0\ref\EMS.API.dll
+C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
