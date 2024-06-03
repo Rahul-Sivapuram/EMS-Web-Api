@@ -46,5 +46,6 @@ namespace EMS.DAL
 
         public bool IsActive{get;set;}
         public string ModeStatus{get;set;}
+        public string? ProfilePic{get;set;}
     }
 }

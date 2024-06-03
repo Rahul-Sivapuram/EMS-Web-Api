@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EMS.DAL
-build_property.ProjectDir = C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.DAL\
+build_property.ProjectDir = C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\ems\EMS.DAL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T0DmosM/LrlB5XEVADDaLHgaI7/2rYCVGUJaE7IDo/8LVCoRKLxgFbsey22YLClqqb8UoyXX111piM+icff5mQ==",
+  "dgSpecHash": "Nqx2QEo16HV3Y7YO8LDMXkdN31uwizwZcOcgbbIMvhcx/LjRp0Kl1wJRajk3ZGliAG3vMaFn4nepB7otVpRtoQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.BAL\\EMS.BAL.csproj",
+  "projectFilePath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.BAL\\EMS.BAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rahul.sivapuram\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\rahul.sivapuram\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

@@ -24,7 +24,7 @@ namespace EMS.API
         {
             var userId = User.FindFirstValue("Id");
             var employee = await _employeeservice.GetEmployeeById(id);
-            var response = Validations.ValidateLoggedInUser(id, userId, employee, false,null);
+            var response = Validations.ValidateLoggedInUser(id, userId, employee, false, null);
             if (response == null)
             {
                 return new ApiResponse<EmployeeDetail> { Status = "success", Data = [employee], };
@@ -38,9 +38,16 @@ namespace EMS.API
         [HttpPost()]
         public async Task<ApiResponse<EmployeeDetail>> Insert(EmployeeDetail employee)
         {
-            var res = await _employeeservice.AddEmployee(employee);
-            return res != null ? new ApiResponse<EmployeeDetail> { Status = StatusCodes.SUCCESS.ToString(), }
-            : new ApiResponse<EmployeeDetail> { Status = StatusCodes.FAIL.ToString(), ErrorCode = ErrorCodes.INSERTION_FAILED.ToString(), };
+            try
+            {
+                var res = await _employeeservice.AddEmployee(employee);
+                return res != null ? new ApiResponse<EmployeeDetail> { Status = StatusCodes.SUCCESS.ToString(), } : new ApiResponse<EmployeeDetail> { Status = StatusCodes.FAIL.ToString(), ErrorCode = ErrorCodes.INSERTION_FAILED.ToString(), };
+            }
+           
+            catch(Exception e)
+            {
+                return new ApiResponse<EmployeeDetail> { Status = StatusCodes.FAIL.ToString(), ErrorCode = ErrorCodes.INSERTION_FAILED.ToString(), };
+            }
         }
 
         [Authorize]
@@ -48,7 +55,7 @@ namespace EMS.API
         public async Task<ApiResponse<EmployeeDetail>> Update(int id, EmployeeDTO request)
         {
             var userId = User.FindFirstValue("Id");
-            var response = Validations.ValidateLoggedInUser(id, userId, null, true,request);
+            var response = Validations.ValidateLoggedInUser(id, userId, null, true, request);
             if (response != null)
             {
                 return response;
@@ -81,7 +88,7 @@ namespace EMS.API
         {
             var empdata = await _employeeservice.GetEmployees(query);
             return empdata.Count > 0 ? new ApiResponse<EmployeeDetail> { Status = "success", Data = empdata, }
-            :new ApiResponse<EmployeeDetail>{Status = "fail",ErrorCode = ErrorCodes.NO_DATA.ToString()};
+            : new ApiResponse<EmployeeDetail> { Status = "fail", ErrorCode = ErrorCodes.NO_DATA.ToString() };
         }
     }
 }

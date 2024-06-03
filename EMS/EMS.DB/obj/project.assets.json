@@ -4597,12 +4597,14 @@
       "outputPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.DB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rahul.sivapuram\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\rahul.sivapuram\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

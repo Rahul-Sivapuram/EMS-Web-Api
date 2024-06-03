@@ -1,0 +1,16 @@
+2024-05-30 18:55:28.919 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-30 18:55:29.091 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-30 18:55:29.096 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-30 18:55:29.097 +05:30 [INF] Hosting environment: Development
+2024-05-30 18:55:29.097 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API
+2024-05-30 18:55:29.330 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/ - null null
+2024-05-30 18:55:29.386 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-30 18:55:29.443 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/ - 404 0 null 114.2004ms
+2024-05-30 18:55:29.453 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5238/, Response status code: 404
+2024-05-30 18:55:36.415 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/ - null null
+2024-05-30 18:55:36.418 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/ - 404 0 null 3.4438ms
+2024-05-30 18:55:36.419 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5238/, Response status code: 404
+2024-05-30 18:55:41.926 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/ - null null
+2024-05-30 18:55:41.934 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/ - 404 0 null 7.4213ms
+2024-05-30 18:55:41.934 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5238/, Response status code: 404
+2024-05-30 18:55:47.937 +05:30 [INF] Application is shutting down...

@@ -39,6 +39,8 @@ public partial class Employee
 
     public int ModeId { get; set; }
 
+    public string? ProfilePic {get;set;}
+
     public virtual Department? Department { get; set; }
 
     public virtual ICollection<Employee> InverseManager { get; set; } = new List<Employee>();

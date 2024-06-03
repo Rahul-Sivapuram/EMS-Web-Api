@@ -123,6 +123,10 @@ namespace EMS.DB.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("ProfilePic")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("ProjectId")
                         .HasColumnType("int");
 

@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.API\\EMS.API.csproj": {}
+    "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.API\\EMS.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.API\\EMS.API.csproj": {
+    "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.API\\EMS.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.API\\EMS.API.csproj",
+        "projectUniqueName": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.API\\EMS.API.csproj",
         "projectName": "EMS.API",
-        "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.API\\EMS.API.csproj",
+        "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.API\\EMS.API.csproj",
         "packagesPath": "C:\\Users\\rahul.sivapuram\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.API\\obj\\",
+        "outputPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rahul.sivapuram\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rahul.sivapuram\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.BAL\\EMS.BAL.csproj": {
-                "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.BAL\\EMS.BAL.csproj"
+              "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.BAL\\EMS.BAL.csproj": {
+                "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.BAL\\EMS.BAL.csproj"
               }
             }
           }
@@ -147,30 +149,32 @@
         }
       }
     },
-    "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.BAL\\EMS.BAL.csproj": {
+    "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.BAL\\EMS.BAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.BAL\\EMS.BAL.csproj",
+        "projectUniqueName": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.BAL\\EMS.BAL.csproj",
         "projectName": "EMS.BAL",
-        "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.BAL\\EMS.BAL.csproj",
+        "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.BAL\\EMS.BAL.csproj",
         "packagesPath": "C:\\Users\\rahul.sivapuram\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.BAL\\obj\\",
+        "outputPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.BAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rahul.sivapuram\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rahul.sivapuram\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.DAL\\EMS.DAL.csproj": {
-                "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.DAL\\EMS.DAL.csproj"
+              "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.DAL\\EMS.DAL.csproj": {
+                "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.DAL\\EMS.DAL.csproj"
               }
             }
           }
@@ -251,30 +255,32 @@
         }
       }
     },
-    "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.DAL\\EMS.DAL.csproj": {
+    "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.DAL\\EMS.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.DAL\\EMS.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.DAL\\EMS.DAL.csproj",
         "projectName": "EMS.DAL",
-        "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.DAL\\EMS.DAL.csproj",
+        "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.DAL\\EMS.DAL.csproj",
         "packagesPath": "C:\\Users\\rahul.sivapuram\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.DAL\\obj\\",
+        "outputPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rahul.sivapuram\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rahul.sivapuram\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.DB\\EMS.DB.csproj": {
-                "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.DB\\EMS.DB.csproj"
+              "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.DB\\EMS.DB.csproj": {
+                "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.DB\\EMS.DB.csproj"
               }
             }
           }
@@ -359,22 +365,24 @@
         }
       }
     },
-    "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.DB\\EMS.DB.csproj": {
+    "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.DB\\EMS.DB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.DB\\EMS.DB.csproj",
+        "projectUniqueName": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.DB\\EMS.DB.csproj",
         "projectName": "EMS.DB",
-        "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.DB\\EMS.DB.csproj",
+        "projectPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.DB\\EMS.DB.csproj",
         "packagesPath": "C:\\Users\\rahul.sivapuram\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\EMS\\EMS.DB\\obj\\",
+        "outputPath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.DB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rahul.sivapuram\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rahul.sivapuram\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

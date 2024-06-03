@@ -35,8 +35,9 @@ namespace EMS.DB.Models
         public string? Department { get; set; }
         public string Manager { get; set; } = null!;
         public string? Project { get; set; }
-        public bool IsActive{get;set;}
+        public bool IsActive { get; set; }
+        public string ModelStatus { get; set; }
+        public string? ProfilePic { get; set; }
 
-        public string ModelStatus{get;set;}
     }
 }
