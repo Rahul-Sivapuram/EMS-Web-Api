@@ -1,0 +1,557 @@
+2024-05-20 12:02:13.220 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-20 12:02:13.331 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-20 12:02:13.334 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-20 12:02:13.335 +05:30 [INF] Hosting environment: Development
+2024-05-20 12:02:13.335 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS\EMS.API
+2024-05-20 12:11:14.774 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-20 12:11:14.971 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 197.8446ms
+2024-05-20 12:11:14.985 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-20 12:11:14.989 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 3.6349ms
+2024-05-20 12:11:15.244 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-20 12:11:15.429 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 185.815ms
+2024-05-20 12:11:48.809 +05:30 [INF] Application is shutting down...
+2024-05-20 13:23:44.262 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-20 13:23:44.422 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-20 13:23:44.425 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-20 13:23:44.426 +05:30 [INF] Hosting environment: Development
+2024-05-20 13:23:44.426 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS\EMS.API
+2024-05-20 13:23:44.477 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-20 13:23:44.650 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 175.142ms
+2024-05-20 13:23:44.663 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-20 13:23:44.667 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 4.1703ms
+2024-05-20 13:23:45.166 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-20 13:23:45.330 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 164.0378ms
+2024-05-20 13:24:06.162 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-05-20 13:24:06.167 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-20 13:24:06.240 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:24:06.273 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-20 13:24:08.577 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-20 13:24:08.579 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-20 13:24:09.558 +05:30 [INF] Executed DbCommand (66ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-20 13:24:09.652 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-20 13:24:09.663 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 3386.5044ms
+2024-05-20 13:24:09.663 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:24:09.670 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 3507.9245ms
+2024-05-20 13:24:25.568 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Login - application/json 68
+2024-05-20 13:24:25.570 +05:30 [INF] Executing endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-20 13:24:25.572 +05:30 [INF] Route matched with {action = "SignIn", controller = "Login"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.API.TokenModel] SignIn(EMS.DB.Models.UserLogin) on controller EMS.API.LoginController (EMS.API).
+2024-05-20 13:24:25.786 +05:30 [INF] Executed DbCommand (86ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[DOB], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[IsManager], [e].[JoiningDate], [e].[LastName], [e].[LocationId], [e].[ManagerId], [e].[MobileNumber], [e].[ModeId], [e].[Password], [e].[ProjectId], [e].[RoleId], [e].[Uid]
+FROM [Employee] AS [e]
+2024-05-20 13:24:26.775 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Employee] SET [IsActive] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2024-05-20 13:24:26.791 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.API.TokenModel, EMS.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-20 13:24:26.794 +05:30 [INF] Executed action EMS.API.LoginController.SignIn (EMS.API) in 1221.9766ms
+2024-05-20 13:24:26.794 +05:30 [INF] Executed endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-20 13:24:26.794 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Login - 200 null application/json; charset=utf-8 1226.2139ms
+2024-05-20 13:29:19.405 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Employees - application/json 372
+2024-05-20 13:29:19.550 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '18-05-2024 08:45:33', Current time (UTC): '20-05-2024 07:59:19'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-05-20 13:29:19.560 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '18-05-2024 08:45:33', Current time (UTC): '20-05-2024 07:59:19'.
+2024-05-20 13:29:19.560 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Insert (EMS.API)'
+2024-05-20 13:29:19.563 +05:30 [INF] Route matched with {action = "Insert", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Insert(EMS.DB.Models.EmployeeDetail) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-20 13:29:19.709 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[Name]
+FROM [Location] AS [l]
+2024-05-20 13:29:19.752 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[DepartmentId], [r].[Description], [r].[EmployeeId], [r].[LocationId], [r].[Name]
+FROM [Roles] AS [r]
+2024-05-20 13:29:19.794 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [Department] AS [d]
+2024-05-20 13:29:19.841 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+2024-05-20 13:29:19.860 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [Project] AS [p]
+2024-05-20 13:29:20.079 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Date), @p2='?' (Size = 256) (DbType = AnsiString), @p3='?' (Size = 8000) (DbType = AnsiString), @p4='?' (DbType = Boolean), @p5='?' (DbType = Date), @p6='?' (Size = 8000) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (DbType = Int32), @p11='?' (Size = 450), @p12='?' (DbType = Int32), @p13='?' (DbType = Int32), @p14='?' (Size = 6) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([DepartmentId], [DOB], [EmailId], [FirstName], [IsManager], [JoiningDate], [LastName], [LocationId], [ManagerId], [MobileNumber], [ModeId], [Password], [ProjectId], [RoleId], [Uid])
+OUTPUT INSERTED.[Id], INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-05-20 13:29:20.188 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'EMS.DB.EmployeeDBContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Employee' with unique index 'UQ__Employee__250375B14E91F0D3'. The duplicate key value is (1234567890).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:a9b3681c-c224-4906-8f1c-e2becc20b3ed
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Employee' with unique index 'UQ__Employee__250375B14E91F0D3'. The duplicate key value is (1234567890).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:a9b3681c-c224-4906-8f1c-e2becc20b3ed
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-05-20 13:29:20.191 +05:30 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+2024-05-20 13:29:20.194 +05:30 [INF] Executed action EMS.API.EmployeesController.Insert (EMS.API) in 630.3277ms
+2024-05-20 13:29:20.196 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Insert (EMS.API)'
+2024-05-20 13:29:20.200 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Employee' with unique index 'UQ__Employee__250375B14E91F0D3'. The duplicate key value is (1234567890).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:a9b3681c-c224-4906-8f1c-e2becc20b3ed
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at EMS.DAL.EmployeeRepository.Add(EmployeeDetail employee) in C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS\EMS.DAL\Repository\EmployeeRepository.cs:line 43
+   at EMS.BAL.EmployeeService.AddEmployee(EmployeeDetail employee) in C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS\EMS.BAL\EmployeeService.cs:line 40
+   at EMS.API.EmployeesController.Insert(EmployeeDetail employee) in C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS\EMS.API\Controllers\EmployeeController.cs:line 41
+   at lambda_method334(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-20 13:29:20.239 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Employees - 500 null text/plain; charset=utf-8 833.6102ms
+2024-05-20 13:29:37.243 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Employees - application/json 372
+2024-05-20 13:29:37.244 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '18-05-2024 08:45:33', Current time (UTC): '20-05-2024 07:59:37'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-05-20 13:29:37.244 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '18-05-2024 08:45:33', Current time (UTC): '20-05-2024 07:59:37'.
+2024-05-20 13:29:37.244 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Insert (EMS.API)'
+2024-05-20 13:29:37.245 +05:30 [INF] Route matched with {action = "Insert", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Insert(EMS.DB.Models.EmployeeDetail) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-20 13:29:37.254 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[Name]
+FROM [Location] AS [l]
+2024-05-20 13:29:37.257 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[DepartmentId], [r].[Description], [r].[EmployeeId], [r].[LocationId], [r].[Name]
+FROM [Roles] AS [r]
+2024-05-20 13:29:37.261 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [Department] AS [d]
+2024-05-20 13:29:37.265 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+2024-05-20 13:29:37.269 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [Project] AS [p]
+2024-05-20 13:29:37.278 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Date), @p2='?' (Size = 256) (DbType = AnsiString), @p3='?' (Size = 8000) (DbType = AnsiString), @p4='?' (DbType = Boolean), @p5='?' (DbType = Date), @p6='?' (Size = 8000) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (DbType = Int32), @p11='?' (Size = 450), @p12='?' (DbType = Int32), @p13='?' (DbType = Int32), @p14='?' (Size = 6) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([DepartmentId], [DOB], [EmailId], [FirstName], [IsManager], [JoiningDate], [LastName], [LocationId], [ManagerId], [MobileNumber], [ModeId], [Password], [ProjectId], [RoleId], [Uid])
+OUTPUT INSERTED.[Id], INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-05-20 13:29:37.303 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-20 13:29:37.303 +05:30 [INF] Executed action EMS.API.EmployeesController.Insert (EMS.API) in 58.3133ms
+2024-05-20 13:29:37.303 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Insert (EMS.API)'
+2024-05-20 13:29:37.303 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 60.5394ms
+2024-05-20 13:29:58.800 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-05-20 13:29:58.800 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:29:58.801 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-20 13:29:58.812 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-20 13:29:58.812 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-20 13:29:58.812 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 11.8023ms
+2024-05-20 13:29:58.813 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:29:58.813 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 12.7805ms
+2024-05-20 13:31:22.430 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-05-20 13:31:22.431 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:31:22.432 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-20 13:31:22.455 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-20 13:31:22.456 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-20 13:31:22.457 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 25.2156ms
+2024-05-20 13:31:22.457 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:31:22.458 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 27.6979ms
+2024-05-20 13:32:04.404 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?PageNumber=2&PageSize=5 - null null
+2024-05-20 13:32:04.404 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:32:04.404 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-20 13:32:04.478 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-20 13:32:04.479 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-20 13:32:04.516 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-05-20 13:32:04.518 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-20 13:32:04.519 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 114.5574ms
+2024-05-20 13:32:04.519 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:32:04.519 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?PageNumber=2&PageSize=5 - 200 null application/json; charset=utf-8 115.593ms
+2024-05-20 13:32:17.571 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-05-20 13:32:17.572 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:32:17.572 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-20 13:32:17.585 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-20 13:32:17.586 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-20 13:32:17.587 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 14.2598ms
+2024-05-20 13:32:17.587 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:32:17.587 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 16.3533ms
+2024-05-20 13:43:44.267 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Register - application/json 417
+2024-05-20 13:43:44.267 +05:30 [INF] Executing endpoint 'EMS.API.RegisterController.RegisterUser (EMS.API)'
+2024-05-20 13:43:44.270 +05:30 [INF] Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DAL.RegisterDTO] RegisterUser(EMS.DAL.RegisterDTO) on controller EMS.API.RegisterController (EMS.API).
+2024-05-20 13:43:44.356 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[Name]
+FROM [Location] AS [l]
+2024-05-20 13:43:44.359 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[DepartmentId], [r].[Description], [r].[EmployeeId], [r].[LocationId], [r].[Name]
+FROM [Roles] AS [r]
+2024-05-20 13:43:44.363 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [Department] AS [d]
+2024-05-20 13:43:44.368 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+2024-05-20 13:43:44.372 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [Project] AS [p]
+2024-05-20 13:43:45.061 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Date), @p2='?' (Size = 256) (DbType = AnsiString), @p3='?' (Size = 8000) (DbType = AnsiString), @p4='?' (DbType = Boolean), @p5='?' (DbType = Date), @p6='?' (Size = 8000) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (DbType = Int32), @p11='?' (Size = 450), @p12='?' (DbType = Int32), @p13='?' (DbType = Int32), @p14='?' (Size = 6) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([DepartmentId], [DOB], [EmailId], [FirstName], [IsManager], [JoiningDate], [LastName], [LocationId], [ManagerId], [MobileNumber], [ModeId], [Password], [ProjectId], [RoleId], [Uid])
+OUTPUT INSERTED.[Id], INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-05-20 13:43:45.067 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'EMS.DB.EmployeeDBContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Employee' with unique index 'UQ__Employee__250375B14E91F0D3'. The duplicate key value is (2234567891).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:9dffb144-fc38-461c-ae76-068214964f26
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Employee' with unique index 'UQ__Employee__250375B14E91F0D3'. The duplicate key value is (2234567891).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:9dffb144-fc38-461c-ae76-068214964f26
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-05-20 13:43:45.069 +05:30 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+2024-05-20 13:43:45.071 +05:30 [INF] Executed action EMS.API.RegisterController.RegisterUser (EMS.API) in 800.3711ms
+2024-05-20 13:43:45.071 +05:30 [INF] Executed endpoint 'EMS.API.RegisterController.RegisterUser (EMS.API)'
+2024-05-20 13:43:45.073 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Employee' with unique index 'UQ__Employee__250375B14E91F0D3'. The duplicate key value is (2234567891).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:9dffb144-fc38-461c-ae76-068214964f26
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at EMS.DAL.RegisterRepository.RegisterUser(RegisterDTO user) in C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS\EMS.DAL\Repository\RegisterRepository.cs:line 22
+   at EMS.BAL.RegisterService.AddUser(RegisterDTO user) in C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS\EMS.BAL\RegisterService.cs:line 23
+   at EMS.API.RegisterController.RegisterUser(RegisterDTO user) in C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS\EMS.API\Controllers\RegisterController.cs:line 23
+   at lambda_method623(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-20 13:43:45.134 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Register - 500 null text/plain; charset=utf-8 867.1567ms
+2024-05-20 13:44:02.667 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Register - application/json 417
+2024-05-20 13:44:02.667 +05:30 [INF] Executing endpoint 'EMS.API.RegisterController.RegisterUser (EMS.API)'
+2024-05-20 13:44:02.667 +05:30 [INF] Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DAL.RegisterDTO] RegisterUser(EMS.DAL.RegisterDTO) on controller EMS.API.RegisterController (EMS.API).
+2024-05-20 13:44:02.679 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[Name]
+FROM [Location] AS [l]
+2024-05-20 13:44:02.684 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[DepartmentId], [r].[Description], [r].[EmployeeId], [r].[LocationId], [r].[Name]
+FROM [Roles] AS [r]
+2024-05-20 13:44:02.688 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [Department] AS [d]
+2024-05-20 13:44:02.694 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+2024-05-20 13:44:02.698 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [Project] AS [p]
+2024-05-20 13:44:03.464 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Date), @p2='?' (Size = 256) (DbType = AnsiString), @p3='?' (Size = 8000) (DbType = AnsiString), @p4='?' (DbType = Boolean), @p5='?' (DbType = Date), @p6='?' (Size = 8000) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (DbType = Int32), @p11='?' (Size = 450), @p12='?' (DbType = Int32), @p13='?' (DbType = Int32), @p14='?' (Size = 6) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([DepartmentId], [DOB], [EmailId], [FirstName], [IsManager], [JoiningDate], [LastName], [LocationId], [ManagerId], [MobileNumber], [ModeId], [Password], [ProjectId], [RoleId], [Uid])
+OUTPUT INSERTED.[Id], INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-05-20 13:44:03.465 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DAL.RegisterDTO, EMS.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-20 13:44:03.469 +05:30 [INF] Executed action EMS.API.RegisterController.RegisterUser (EMS.API) in 801.322ms
+2024-05-20 13:44:03.469 +05:30 [INF] Executed endpoint 'EMS.API.RegisterController.RegisterUser (EMS.API)'
+2024-05-20 13:44:03.469 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Register - 200 null application/json; charset=utf-8 802.3625ms
+2024-05-20 13:44:10.128 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-05-20 13:44:10.128 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:44:10.129 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-20 13:44:10.139 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-20 13:44:10.140 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-20 13:44:10.140 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 11.3789ms
+2024-05-20 13:44:10.140 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:44:10.141 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 12.7522ms
+2024-05-20 13:44:16.883 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-05-20 13:44:16.884 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:44:16.884 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-20 13:44:16.893 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-20 13:44:16.894 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-20 13:44:16.894 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 10.3101ms
+2024-05-20 13:44:16.894 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:44:16.895 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 11.8068ms
+2024-05-20 13:44:26.699 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-20 13:44:26.701 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 1.9169ms
+2024-05-20 13:44:26.728 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-20 13:44:26.728 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4744ms
+2024-05-20 13:44:27.158 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-20 13:44:27.177 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.1649ms
+2024-05-20 13:44:29.443 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-05-20 13:44:29.444 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:44:29.444 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-20 13:44:29.461 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-20 13:44:29.461 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-20 13:44:29.462 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 17.3714ms
+2024-05-20 13:44:29.462 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:44:29.462 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 18.8974ms
+2024-05-20 13:46:56.403 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Login - application/json 64
+2024-05-20 13:46:56.404 +05:30 [INF] Executing endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-20 13:46:56.404 +05:30 [INF] Route matched with {action = "SignIn", controller = "Login"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.API.TokenModel] SignIn(EMS.DB.Models.UserLogin) on controller EMS.API.LoginController (EMS.API).
+2024-05-20 13:46:56.414 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[DOB], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[IsManager], [e].[JoiningDate], [e].[LastName], [e].[LocationId], [e].[ManagerId], [e].[MobileNumber], [e].[ModeId], [e].[Password], [e].[ProjectId], [e].[RoleId], [e].[Uid]
+FROM [Employee] AS [e]
+2024-05-20 13:46:57.290 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Employee] SET [IsActive] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2024-05-20 13:46:57.290 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.API.TokenModel, EMS.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-20 13:46:57.290 +05:30 [INF] Executed action EMS.API.LoginController.SignIn (EMS.API) in 886.4087ms
+2024-05-20 13:46:57.291 +05:30 [INF] Executed endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-20 13:46:57.291 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Login - 200 null application/json; charset=utf-8 887.4344ms
+2024-05-20 13:51:39.519 +05:30 [INF] Application is shutting down...
+2024-05-20 13:55:30.468 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-20 13:55:30.582 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-20 13:55:30.584 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-20 13:55:30.584 +05:30 [INF] Hosting environment: Development
+2024-05-20 13:55:30.584 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS\EMS.API
+2024-05-20 13:56:05.714 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-20 13:56:05.836 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 126.2107ms
+2024-05-20 13:56:05.840 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-20 13:56:05.842 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.4145ms
+2024-05-20 13:56:05.919 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-20 13:56:06.121 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 201.5305ms
+2024-05-20 13:56:11.917 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Employees - application/json 372
+2024-05-20 13:56:11.922 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-20 13:56:11.988 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '18-05-2024 08:45:33', Current time (UTC): '20-05-2024 08:26:11'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-05-20 13:56:11.996 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '18-05-2024 08:45:33', Current time (UTC): '20-05-2024 08:26:11'.
+2024-05-20 13:56:12.000 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Insert (EMS.API)'
+2024-05-20 13:56:12.018 +05:30 [INF] Route matched with {action = "Insert", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Insert(EMS.DB.Models.EmployeeDetail) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-20 13:56:13.942 +05:30 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[Name]
+FROM [Location] AS [l]
+2024-05-20 13:56:14.085 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[DepartmentId], [r].[Description], [r].[EmployeeId], [r].[LocationId], [r].[Name]
+FROM [Roles] AS [r]
+2024-05-20 13:56:14.182 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [Department] AS [d]
+2024-05-20 13:56:14.241 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+2024-05-20 13:56:14.303 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [Project] AS [p]
+2024-05-20 13:56:14.325 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Name]
+FROM [Modes] AS [m]
+2024-05-20 13:56:14.530 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Date), @p2='?' (Size = 256) (DbType = AnsiString), @p3='?' (Size = 8000) (DbType = AnsiString), @p4='?' (DbType = Boolean), @p5='?' (DbType = Date), @p6='?' (Size = 8000) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (DbType = Int32), @p11='?' (Size = 450), @p12='?' (DbType = Int32), @p13='?' (DbType = Int32), @p14='?' (Size = 6) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([DepartmentId], [DOB], [EmailId], [FirstName], [IsManager], [JoiningDate], [LastName], [LocationId], [ManagerId], [MobileNumber], [ModeId], [Password], [ProjectId], [RoleId], [Uid])
+OUTPUT INSERTED.[Id], INSERTED.[IsActive]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-05-20 13:56:14.561 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-20 13:56:14.569 +05:30 [INF] Executed action EMS.API.EmployeesController.Insert (EMS.API) in 2548.0813ms
+2024-05-20 13:56:14.569 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Insert (EMS.API)'
+2024-05-20 13:56:14.576 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 2658.4944ms
+2024-05-20 13:56:19.202 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-05-20 13:56:19.204 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:56:19.209 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-20 13:56:19.269 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-20 13:56:19.270 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-20 13:56:19.282 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-20 13:56:19.284 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-20 13:56:19.289 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 79.6291ms
+2024-05-20 13:56:19.289 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-20 13:56:19.289 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 86.9326ms
+2024-05-20 16:44:09.170 +05:30 [INF] Application is shutting down...

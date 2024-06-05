@@ -1,0 +1,291 @@
+2024-06-04 10:36:52.759 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 10:36:52.950 +05:30 [INF] Now listening on: http://localhost:5238
+2024-06-04 10:36:52.954 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-04 10:36:52.954 +05:30 [INF] Hosting environment: Development
+2024-06-04 10:36:52.954 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\ems\EMS.API
+2024-06-04 10:54:24.138 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 10:54:24.280 +05:30 [INF] Now listening on: http://localhost:5238
+2024-06-04 10:54:24.283 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-04 10:54:24.284 +05:30 [INF] Hosting environment: Development
+2024-06-04 10:54:24.284 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\ems\EMS.API
+2024-06-04 11:02:17.306 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-04 11:02:17.569 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 268.9086ms
+2024-06-04 11:02:17.605 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 11:02:17.609 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 4.0979ms
+2024-06-04 11:02:17.841 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-04 11:02:18.130 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 288.739ms
+2024-06-04 11:02:32.009 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?Status=true - null null
+2024-06-04 11:02:32.018 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-04 11:02:32.078 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:02:32.112 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-04 11:02:33.533 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-04 11:02:33.534 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-04 11:02:35.709 +05:30 [INF] Executed DbCommand (531ms) [Parameters=[@__query_Status_0='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+WHERE [e].[IsActive] IN (
+    SELECT [q].[value]
+    FROM OPENJSON(@__query_Status_0) WITH ([value] bit '$') AS [q]
+)
+ORDER BY (SELECT 1)
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-06-04 11:02:35.895 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:02:35.919 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 3801.7416ms
+2024-06-04 11:02:35.920 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:02:35.925 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?Status=true - 200 null application/json; charset=utf-8 3915.856ms
+2024-06-04 11:03:01.758 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?Location=Hyderabad - null null
+2024-06-04 11:03:01.762 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:03:01.762 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-04 11:03:01.766 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-04 11:03:01.766 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-04 11:03:02.064 +05:30 [INF] Executed DbCommand (286ms) [Parameters=[@__query_Location_0='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+WHERE [e].[Location] IN (
+    SELECT [q].[value]
+    FROM OPENJSON(@__query_Location_0) WITH ([value] nvarchar(max) '$') AS [q]
+)
+ORDER BY (SELECT 1)
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-06-04 11:03:02.065 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:03:02.065 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 302.9311ms
+2024-06-04 11:03:02.065 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:03:02.065 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?Location=Hyderabad - 200 null application/json; charset=utf-8 307.1509ms
+2024-06-04 11:03:17.892 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?Location=Hyderabad&Location=Bangalore - null null
+2024-06-04 11:03:17.895 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:03:17.895 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-04 11:03:18.127 +05:30 [INF] Executed DbCommand (225ms) [Parameters=[@__query_Location_0='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+WHERE [e].[Location] IN (
+    SELECT [q].[value]
+    FROM OPENJSON(@__query_Location_0) WITH ([value] nvarchar(max) '$') AS [q]
+)
+ORDER BY (SELECT 1)
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-06-04 11:03:18.127 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:03:18.128 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 232.517ms
+2024-06-04 11:03:18.128 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:03:18.128 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?Location=Hyderabad&Location=Bangalore - 200 null application/json; charset=utf-8 235.5562ms
+2024-06-04 11:12:49.950 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?Status=true - null null
+2024-06-04 11:12:49.951 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:12:49.951 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-04 11:12:51.330 +05:30 [INF] Executed DbCommand (216ms) [Parameters=[@__query_Status_0='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+WHERE [e].[IsActive] IN (
+    SELECT [q].[value]
+    FROM OPENJSON(@__query_Status_0) WITH ([value] bit '$') AS [q]
+)
+ORDER BY (SELECT 1)
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-06-04 11:12:51.331 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:12:51.331 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 1379.8615ms
+2024-06-04 11:12:51.331 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:12:51.331 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?Status=true - 200 null application/json; charset=utf-8 1381.1149ms
+2024-06-04 11:13:26.163 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?Department=IT - null null
+2024-06-04 11:13:26.164 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:13:26.164 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-04 11:13:26.166 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-04 11:13:26.166 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-04 11:13:26.444 +05:30 [INF] Executed DbCommand (274ms) [Parameters=[@__query_Department_0='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+WHERE [e].[Department] IN (
+    SELECT [q].[value]
+    FROM OPENJSON(@__query_Department_0) WITH ([value] nvarchar(max) '$') AS [q]
+)
+ORDER BY (SELECT 1)
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-06-04 11:13:26.446 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:13:26.446 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 281.6991ms
+2024-06-04 11:13:26.446 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:13:26.446 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?Department=IT - 200 null application/json; charset=utf-8 282.6323ms
+2024-06-04 11:18:12.421 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-04 11:18:12.423 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 1.6012ms
+2024-06-04 11:18:12.438 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 11:18:12.439 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.6485ms
+2024-06-04 11:18:12.595 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-04 11:18:12.602 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.8077ms
+2024-06-04 11:18:16.356 +05:30 [INF] Application is shutting down...
+2024-06-04 11:30:48.511 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 11:30:48.670 +05:30 [INF] Now listening on: http://localhost:5238
+2024-06-04 11:30:48.674 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-04 11:30:48.675 +05:30 [INF] Hosting environment: Development
+2024-06-04 11:30:48.675 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\ems\EMS.API
+2024-06-04 11:31:05.010 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-04 11:31:05.127 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 117.8018ms
+2024-06-04 11:31:05.138 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 11:31:05.140 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 2.0633ms
+2024-06-04 11:31:05.419 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-04 11:31:05.528 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.8167ms
+2024-06-04 11:31:30.092 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-06-04 11:31:30.103 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-04 11:31:30.158 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:31:30.192 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-04 11:31:31.565 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-04 11:31:31.566 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-04 11:31:33.563 +05:30 [INF] Executed DbCommand (318ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-06-04 11:31:33.694 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:31:33.721 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 3521.0639ms
+2024-06-04 11:31:33.722 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:31:33.725 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 3633.2027ms
+2024-06-04 11:32:45.193 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?EmployeeName=r - null null
+2024-06-04 11:32:45.196 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:32:45.197 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-04 11:32:45.222 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-04 11:32:45.223 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-04 11:32:45.761 +05:30 [INF] Executed DbCommand (531ms) [Parameters=[@__query_EmployeeName_0_startswith='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+WHERE [e].[FirstName] LIKE @__query_EmployeeName_0_startswith ESCAPE N'\'
+ORDER BY (SELECT 1)
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-06-04 11:32:45.765 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:32:45.766 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 569.1369ms
+2024-06-04 11:32:45.767 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:32:45.769 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?EmployeeName=r - 200 null application/json; charset=utf-8 575.5519ms
+2024-06-04 11:32:58.723 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?EmployeeName=k - null null
+2024-06-04 11:32:58.725 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:32:58.726 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-04 11:32:59.108 +05:30 [INF] Executed DbCommand (378ms) [Parameters=[@__query_EmployeeName_0_startswith='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+WHERE [e].[FirstName] LIKE @__query_EmployeeName_0_startswith ESCAPE N'\'
+ORDER BY (SELECT 1)
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-06-04 11:32:59.600 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:32:59.601 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 875.2224ms
+2024-06-04 11:32:59.601 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:32:59.602 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?EmployeeName=k - 200 null application/json; charset=utf-8 878.6145ms
+2024-06-04 11:33:09.838 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-06-04 11:33:09.839 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:33:09.839 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-04 11:33:10.054 +05:30 [INF] Executed DbCommand (214ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-06-04 11:33:10.055 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:33:10.055 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 216.7569ms
+2024-06-04 11:33:10.056 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:33:10.056 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 217.5828ms
+2024-06-04 11:37:40.170 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-06-04 11:37:40.170 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:37:40.170 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-04 11:37:40.385 +05:30 [INF] Executed DbCommand (214ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-06-04 11:37:40.386 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:37:40.387 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 216.465ms
+2024-06-04 11:37:40.387 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:37:40.387 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 217.2464ms
+2024-06-04 11:38:41.901 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-04 11:38:41.917 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 15.675ms
+2024-06-04 11:38:41.935 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 11:38:41.936 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.7937ms
+2024-06-04 11:38:42.164 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-04 11:38:42.179 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.1891ms
+2024-06-04 11:38:45.251 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-04 11:38:45.251 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 0.7203ms
+2024-06-04 11:38:45.274 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 11:38:45.275 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.5339ms
+2024-06-04 11:38:45.367 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-04 11:38:45.375 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.5091ms
+2024-06-04 11:38:46.967 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-04 11:38:46.968 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 0.8895ms
+2024-06-04 11:38:46.984 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 11:38:46.985 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.7162ms
+2024-06-04 11:38:47.069 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-04 11:38:47.074 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.4932ms
+2024-06-04 11:39:05.494 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-06-04 11:39:05.494 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:39:05.503 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-04 11:39:05.742 +05:30 [INF] Executed DbCommand (238ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-06-04 11:39:05.743 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:39:05.748 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 245.0312ms
+2024-06-04 11:39:05.748 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:39:05.748 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 254.9739ms
+2024-06-04 11:39:58.587 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-04 11:39:58.595 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 8.289ms
+2024-06-04 11:39:58.608 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 11:39:58.609 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4199ms
+2024-06-04 11:39:58.689 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-04 11:39:58.693 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.3818ms
+2024-06-04 11:40:13.277 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-06-04 11:40:13.277 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:40:13.289 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-04 11:40:13.571 +05:30 [INF] Executed DbCommand (279ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-06-04 11:40:13.572 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:40:13.575 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 284.6699ms
+2024-06-04 11:40:13.576 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:40:13.576 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 299.0661ms
+2024-06-04 11:40:22.110 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-04 11:40:22.113 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 2.3722ms
+2024-06-04 11:40:22.138 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 11:40:22.139 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.7523ms
+2024-06-04 11:40:22.243 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-04 11:40:22.249 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.2534ms
+2024-06-04 11:40:30.776 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-04 11:40:30.787 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 10.6256ms
+2024-06-04 11:40:30.796 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 11:40:30.796 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2485ms
+2024-06-04 11:40:30.896 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-04 11:40:30.902 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.7417ms
+2024-06-04 11:40:35.293 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-04 11:40:35.306 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 12.9138ms
+2024-06-04 11:40:35.320 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 11:40:35.320 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2062ms
+2024-06-04 11:40:35.406 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-04 11:40:35.411 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.7133ms
+2024-06-04 11:40:48.531 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?PageNumber=1&PageSize=10 - null null
+2024-06-04 11:40:48.532 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:40:48.538 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-04 11:40:48.757 +05:30 [INF] Executed DbCommand (217ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-06-04 11:40:48.763 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:40:48.767 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 228.9506ms
+2024-06-04 11:40:48.767 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:40:48.767 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?PageNumber=1&PageSize=10 - 200 null application/json; charset=utf-8 235.8748ms
+2024-06-04 11:40:57.483 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-04 11:40:57.489 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 5.2381ms
+2024-06-04 11:40:57.495 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 11:40:57.495 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.1645ms
+2024-06-04 11:40:57.558 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-04 11:40:57.565 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.5213ms
+2024-06-04 11:41:06.150 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-06-04 11:41:06.150 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:41:06.156 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-04 11:41:06.611 +05:30 [INF] Executed DbCommand (453ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-06-04 11:41:06.611 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:41:06.615 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 458.7552ms
+2024-06-04 11:41:06.615 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-04 11:41:06.615 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 465.4214ms
+2024-06-04 11:41:22.341 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-04 11:41:22.341 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 0.5346ms
+2024-06-04 11:41:22.356 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 11:41:22.356 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.1923ms
+2024-06-04 11:41:22.441 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-04 11:41:22.444 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.4819ms
+2024-06-04 11:41:25.368 +05:30 [INF] Application is shutting down...

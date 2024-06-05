@@ -1,0 +1,184 @@
+2024-05-16 14:41:17.624 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-16 14:41:17.856 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-16 14:41:17.861 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-16 14:41:17.862 +05:30 [INF] Hosting environment: Development
+2024-05-16 14:41:17.862 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS\EMS.API
+2024-05-16 14:41:19.185 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-16 14:41:19.418 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 231.0879ms
+2024-05-16 14:41:19.606 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 14:41:19.610 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 3.0804ms
+2024-05-16 14:41:20.176 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-16 14:41:20.490 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 313.2136ms
+2024-05-16 14:41:32.851 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-05-16 14:41:32.862 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-16 14:41:32.927 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-16 14:41:32.973 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-16 14:41:35.057 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-16 14:41:35.059 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-16 14:41:35.866 +05:30 [INF] Executed DbCommand (66ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-16 14:41:35.968 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 14:41:35.983 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 3005.375ms
+2024-05-16 14:41:35.984 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-16 14:41:35.992 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 3141.0206ms
+2024-05-16 14:42:43.268 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Register - application/json 372
+2024-05-16 14:42:43.270 +05:30 [INF] Executing endpoint 'EMS.API.RegisterController.RegisterUser (EMS.API)'
+2024-05-16 14:42:43.272 +05:30 [INF] Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DAL.RegisterDTO] RegisterUser(EMS.DAL.RegisterDTO) on controller EMS.API.RegisterController (EMS.API).
+2024-05-16 14:42:43.380 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__userDetails_Location_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[Name]
+FROM [Location] AS [l]
+WHERE [l].[Name] = @__userDetails_Location_0
+2024-05-16 14:42:43.406 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__userDetails_Role_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[DepartmentId], [r].[Description], [r].[EmployeeId], [r].[LocationId], [r].[Name]
+FROM [Roles] AS [r]
+WHERE [r].[Name] = @__userDetails_Role_0
+2024-05-16 14:42:43.434 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__userDetails_Department_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Name]
+FROM [Department] AS [d]
+WHERE [d].[Name] = @__userDetails_Department_0
+2024-05-16 14:42:43.463 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__userDetails_Manager_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+WHERE [e].[FirstName] + N' ' + [e].[LastName] = @__userDetails_Manager_0
+2024-05-16 14:42:43.486 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__userDetails_Project_0='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Project] AS [p]
+WHERE [p].[Name] = @__userDetails_Project_0
+2024-05-16 14:42:44.310 +05:30 [INF] Executed DbCommand (78ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Date), @p2='?' (Size = 256) (DbType = AnsiString), @p3='?' (Size = 8000) (DbType = AnsiString), @p4='?' (DbType = Boolean), @p5='?' (DbType = Date), @p6='?' (Size = 8000) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 450), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (Size = 6) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([DepartmentId], [DOB], [EmailId], [FirstName], [IsManager], [JoiningDate], [LastName], [LocationId], [ManagerId], [MobileNumber], [Password], [ProjectId], [RoleId], [Uid])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+2024-05-16 14:42:44.331 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DAL.RegisterDTO, EMS.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 14:42:44.333 +05:30 [INF] Executed action EMS.API.RegisterController.RegisterUser (EMS.API) in 1060.4685ms
+2024-05-16 14:42:44.333 +05:30 [INF] Executed endpoint 'EMS.API.RegisterController.RegisterUser (EMS.API)'
+2024-05-16 14:42:44.333 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Register - 200 null application/json; charset=utf-8 1065.1881ms
+2024-05-16 14:42:57.287 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Register - application/json 366
+2024-05-16 14:42:57.290 +05:30 [INF] Executing endpoint 'EMS.API.RegisterController.RegisterUser (EMS.API)'
+2024-05-16 14:42:57.290 +05:30 [INF] Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DAL.RegisterDTO] RegisterUser(EMS.DAL.RegisterDTO) on controller EMS.API.RegisterController (EMS.API).
+2024-05-16 14:42:57.293 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-16 14:42:57.307 +05:30 [INF] Executed action EMS.API.RegisterController.RegisterUser (EMS.API) in 16.5828ms
+2024-05-16 14:42:57.307 +05:30 [INF] Executed endpoint 'EMS.API.RegisterController.RegisterUser (EMS.API)'
+2024-05-16 14:42:57.307 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Register - 400 null application/problem+json; charset=utf-8 19.8307ms
+2024-05-16 16:50:51.187 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-16 16:50:51.305 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-16 16:50:51.308 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-16 16:50:51.309 +05:30 [INF] Hosting environment: Development
+2024-05-16 16:50:51.309 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Documents\rahul\EMS\EMS.API
+2024-05-16 16:50:58.811 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - application/json 343
+2024-05-16 16:50:58.848 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-16 16:50:58.930 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '16-05-2024 11:04:11', Current time (UTC): '16-05-2024 11:20:58'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-05-16 16:50:58.940 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '16-05-2024 11:04:11', Current time (UTC): '16-05-2024 11:20:58'.
+2024-05-16 16:50:58.944 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-16 16:50:58.966 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-16 16:50:59.989 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-16 16:50:59.990 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-16 16:51:00.559 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-16 16:51:00.625 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 16:51:00.652 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 1683.2228ms
+2024-05-16 16:51:00.654 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-16 16:51:00.664 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 1853.7056ms
+2024-05-16 16:51:29.888 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Login - application/json 66
+2024-05-16 16:51:29.892 +05:30 [INF] Executing endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-16 16:51:29.895 +05:30 [INF] Route matched with {action = "SignIn", controller = "Login"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.API.TokenModel] SignIn(EMS.DB.Models.UserLogin) on controller EMS.API.LoginController (EMS.API).
+2024-05-16 16:51:29.947 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[DOB], [e].[EmailId], [e].[FirstName], [e].[IsManager], [e].[JoiningDate], [e].[LastName], [e].[LocationId], [e].[ManagerId], [e].[MobileNumber], [e].[Password], [e].[ProjectId], [e].[RoleId], [e].[Uid]
+FROM [Employee] AS [e]
+2024-05-16 16:51:30.668 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.API.TokenModel, EMS.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 16:51:30.669 +05:30 [INF] Executed action EMS.API.LoginController.SignIn (EMS.API) in 773.1858ms
+2024-05-16 16:51:30.670 +05:30 [INF] Executed endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-16 16:51:30.670 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Login - 200 null application/json; charset=utf-8 782.1ms
+2024-05-16 16:51:38.621 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Login - application/json 66
+2024-05-16 16:51:38.624 +05:30 [INF] Executing endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-16 16:51:38.624 +05:30 [INF] Route matched with {action = "SignIn", controller = "Login"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.API.TokenModel] SignIn(EMS.DB.Models.UserLogin) on controller EMS.API.LoginController (EMS.API).
+2024-05-16 16:51:38.699 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[DOB], [e].[EmailId], [e].[FirstName], [e].[IsManager], [e].[JoiningDate], [e].[LastName], [e].[LocationId], [e].[ManagerId], [e].[MobileNumber], [e].[Password], [e].[ProjectId], [e].[RoleId], [e].[Uid]
+FROM [Employee] AS [e]
+2024-05-16 16:51:39.008 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.API.TokenModel, EMS.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 16:51:39.009 +05:30 [INF] Executed action EMS.API.LoginController.SignIn (EMS.API) in 384.4563ms
+2024-05-16 16:51:39.009 +05:30 [INF] Executed endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-16 16:51:39.010 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Login - 200 null application/json; charset=utf-8 389.015ms
+2024-05-16 16:51:46.997 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Login - application/json 55
+2024-05-16 16:51:46.998 +05:30 [INF] Executing endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-16 16:51:46.999 +05:30 [INF] Route matched with {action = "SignIn", controller = "Login"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.API.TokenModel] SignIn(EMS.DB.Models.UserLogin) on controller EMS.API.LoginController (EMS.API).
+2024-05-16 16:51:47.004 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-16 16:51:47.026 +05:30 [INF] Executed action EMS.API.LoginController.SignIn (EMS.API) in 26.7284ms
+2024-05-16 16:51:47.026 +05:30 [INF] Executed endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-16 16:51:47.027 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Login - 400 null application/problem+json; charset=utf-8 29.2593ms
+2024-05-16 16:53:14.865 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Login - application/json 66
+2024-05-16 16:53:14.866 +05:30 [INF] Executing endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-16 16:53:14.866 +05:30 [INF] Route matched with {action = "SignIn", controller = "Login"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.API.TokenModel] SignIn(EMS.DB.Models.UserLogin) on controller EMS.API.LoginController (EMS.API).
+2024-05-16 16:53:14.875 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[DOB], [e].[EmailId], [e].[FirstName], [e].[IsManager], [e].[JoiningDate], [e].[LastName], [e].[LocationId], [e].[ManagerId], [e].[MobileNumber], [e].[Password], [e].[ProjectId], [e].[RoleId], [e].[Uid]
+FROM [Employee] AS [e]
+2024-05-16 16:53:15.169 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.API.TokenModel, EMS.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 16:53:15.170 +05:30 [INF] Executed action EMS.API.LoginController.SignIn (EMS.API) in 303.4577ms
+2024-05-16 16:53:15.170 +05:30 [INF] Executed endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-16 16:53:15.170 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Login - 200 null application/json; charset=utf-8 305.2274ms
+2024-05-16 16:53:25.138 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5238/api/Employees - application/json 335
+2024-05-16 16:53:25.139 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '16-05-2024 11:04:11', Current time (UTC): '16-05-2024 11:23:25'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-05-16 16:53:25.139 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '16-05-2024 11:04:11', Current time (UTC): '16-05-2024 11:23:25'.
+2024-05-16 16:53:25.139 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-05-16 16:53:25.140 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-05-16 16:53:25.140 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5238/api/Employees - 405 0 null 1.8477ms
+2024-05-16 16:53:46.320 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-05-16 16:53:46.321 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-16 16:53:46.321 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-16 16:53:46.328 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-16 16:53:46.329 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 16:53:46.329 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 7.8449ms
+2024-05-16 16:53:46.329 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-16 16:53:46.330 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 9.5133ms
+2024-05-16 16:53:59.928 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5238/api/Employees/10 - application/json 335
+2024-05-16 16:53:59.929 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '16-05-2024 11:04:11', Current time (UTC): '16-05-2024 11:23:59'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-05-16 16:53:59.929 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '16-05-2024 11:04:11', Current time (UTC): '16-05-2024 11:23:59'.
+2024-05-16 16:53:59.938 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 16:53:59.942 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2024-05-16 16:53:59.942 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5238/api/Employees/10 - 401 0 null 13.9253ms
+2024-05-16 16:54:03.648 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5238/api/Employees/10 - application/json 335
+2024-05-16 16:54:03.651 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 16:54:03.652 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2024-05-16 16:54:03.652 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5238/api/Employees/10 - 401 0 null 4.0017ms
+2024-05-16 16:54:43.246 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5238/api/Employees/1 - application/json 335
+2024-05-16 16:54:43.257 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Update (EMS.API)'
+2024-05-16 16:54:43.258 +05:30 [INF] Route matched with {action = "Update", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Update(Int32, EMS.DB.Models.EmployeeDetail) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-16 16:54:43.264 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-16 16:54:43.264 +05:30 [INF] Executed action EMS.API.EmployeesController.Update (EMS.API) in 5.6111ms
+2024-05-16 16:54:43.264 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Update (EMS.API)'
+2024-05-16 16:54:43.264 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5238/api/Employees/1 - 400 null application/problem+json; charset=utf-8 17.4643ms
+2024-05-16 16:54:54.581 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5238/api/Employees/1 - application/json 341
+2024-05-16 16:54:54.582 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Update (EMS.API)'
+2024-05-16 16:54:54.582 +05:30 [INF] Route matched with {action = "Update", controller = "Employees"}. Executing controller action with signature EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail] Update(Int32, EMS.DB.Models.EmployeeDetail) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-16 16:54:54.587 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 16:54:54.587 +05:30 [INF] Executed action EMS.API.EmployeesController.Update (EMS.API) in 4.6515ms
+2024-05-16 16:54:54.587 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Update (EMS.API)'
+2024-05-16 16:54:54.587 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5238/api/Employees/1 - 200 null application/json; charset=utf-8 5.7278ms

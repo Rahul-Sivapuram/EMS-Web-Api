@@ -1,0 +1,126 @@
+2024-05-21 11:48:26.539 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-21 11:48:26.745 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-21 11:48:26.749 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-21 11:48:26.750 +05:30 [INF] Hosting environment: Development
+2024-05-21 11:48:26.750 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API
+2024-05-21 11:52:14.396 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-21 11:52:14.696 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 300.9774ms
+2024-05-21 11:52:14.711 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-21 11:52:14.716 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 3.9773ms
+2024-05-21 11:52:15.340 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-21 11:52:15.732 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 391.2449ms
+2024-05-21 12:05:31.021 +05:30 [INF] Application is shutting down...
+2024-05-21 13:16:27.072 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-21 13:16:27.222 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-21 13:16:27.224 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-21 13:16:27.225 +05:30 [INF] Hosting environment: Development
+2024-05-21 13:16:27.225 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API
+2024-05-21 13:16:29.621 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees - null null
+2024-05-21 13:16:29.772 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-21 13:16:29.866 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-21 13:16:29.965 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-21 13:16:31.796 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-21 13:16:31.796 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-21 13:16:33.166 +05:30 [INF] Executed DbCommand (91ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-05-21 13:16:33.329 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-21 13:16:33.460 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 3482.3715ms
+2024-05-21 13:16:33.463 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-21 13:16:33.483 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees - 200 null application/json; charset=utf-8 3865.3982ms
+2024-05-21 13:16:43.817 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-21 13:16:43.936 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 119.2064ms
+2024-05-21 13:16:43.944 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-21 13:16:43.947 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 3.1346ms
+2024-05-21 13:16:44.154 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-21 13:16:44.371 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 217.5387ms
+2024-05-21 13:17:02.699 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?Location=Bangalore&PageNumber=1&PageSize=2 - null null
+2024-05-21 13:17:02.706 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-21 13:17:02.706 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-05-21 13:17:02.838 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-21 13:17:02.838 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-05-21 13:17:02.892 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@__query_Location_0='?' (Size = 4000), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+WHERE [e].[Location] = @__query_Location_0
+ORDER BY (SELECT 1)
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-05-21 13:17:02.945 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-21 13:17:02.946 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 239.2435ms
+2024-05-21 13:17:02.947 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-05-21 13:17:02.948 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?Location=Bangalore&PageNumber=1&PageSize=2 - 200 null application/json; charset=utf-8 249.0495ms
+2024-05-21 13:17:21.377 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Login - application/json 64
+2024-05-21 13:17:21.381 +05:30 [INF] Executing endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-21 13:17:21.453 +05:30 [INF] Route matched with {action = "SignIn", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.API.TokenModel]] SignIn(EMS.DB.Models.UserLogin) on controller EMS.API.LoginController (EMS.API).
+2024-05-21 13:17:21.651 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[DOB], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[IsManager], [e].[JoiningDate], [e].[LastName], [e].[LocationId], [e].[ManagerId], [e].[MobileNumber], [e].[ModeId], [e].[Password], [e].[ProjectId], [e].[RoleId], [e].[Uid]
+FROM [Employee] AS [e]
+2024-05-21 13:17:21.849 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.API.TokenModel, EMS.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-21 13:17:21.852 +05:30 [INF] Executed action EMS.API.LoginController.SignIn (EMS.API) in 398.0496ms
+2024-05-21 13:17:21.852 +05:30 [INF] Executed endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-21 13:17:21.852 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Login - 200 null application/json; charset=utf-8 474.8537ms
+2024-05-21 13:18:05.502 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Login - application/json 68
+2024-05-21 13:18:05.502 +05:30 [INF] Executing endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-21 13:18:05.502 +05:30 [INF] Route matched with {action = "SignIn", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.API.TokenModel]] SignIn(EMS.DB.Models.UserLogin) on controller EMS.API.LoginController (EMS.API).
+2024-05-21 13:18:05.513 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[DOB], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[IsManager], [e].[JoiningDate], [e].[LastName], [e].[LocationId], [e].[ManagerId], [e].[MobileNumber], [e].[ModeId], [e].[Password], [e].[ProjectId], [e].[RoleId], [e].[Uid]
+FROM [Employee] AS [e]
+2024-05-21 13:18:06.694 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.API.TokenModel, EMS.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-21 13:18:06.695 +05:30 [INF] Executed action EMS.API.LoginController.SignIn (EMS.API) in 1192.181ms
+2024-05-21 13:18:06.695 +05:30 [INF] Executed endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-21 13:18:06.695 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Login - 200 null application/json; charset=utf-8 1193.4396ms
+2024-05-21 13:18:34.369 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/LogOut/9 - null null
+2024-05-21 13:18:34.468 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-21 13:18:34.477 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2024-05-21 13:18:34.478 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/LogOut/9 - 401 0 null 108.5646ms
+2024-05-21 13:19:08.985 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/LogOut/9 - null null
+2024-05-21 13:19:09.152 +05:30 [INF] Executing endpoint 'EMS.API.Controllers.LogOutController.LogOut (EMS.API)'
+2024-05-21 13:19:09.163 +05:30 [INF] Route matched with {action = "LogOut", controller = "LogOut"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.API.TokenModel]] LogOut(Int32) on controller EMS.API.Controllers.LogOutController (EMS.API).
+2024-05-21 13:19:09.185 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[DepartmentId], [e].[DOB], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[IsManager], [e].[JoiningDate], [e].[LastName], [e].[LocationId], [e].[ManagerId], [e].[MobileNumber], [e].[ModeId], [e].[Password], [e].[ProjectId], [e].[RoleId], [e].[Uid]
+FROM [Employee] AS [e]
+2024-05-21 13:19:09.331 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Employee] SET [IsActive] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2024-05-21 13:19:09.361 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.API.TokenModel, EMS.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-21 13:19:09.361 +05:30 [INF] Executed action EMS.API.Controllers.LogOutController.LogOut (EMS.API) in 198.5802ms
+2024-05-21 13:19:09.362 +05:30 [INF] Executed endpoint 'EMS.API.Controllers.LogOutController.LogOut (EMS.API)'
+2024-05-21 13:19:09.362 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/LogOut/9 - 200 null application/json; charset=utf-8 376.8503ms
+2024-05-21 13:20:28.876 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-05-21 13:20:28.878 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 1.3808ms
+2024-05-21 13:20:28.894 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-21 13:20:28.895 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.5526ms
+2024-05-21 13:20:29.364 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-05-21 13:20:29.389 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.8228ms
+2024-05-21 13:20:34.446 +05:30 [INF] Application is shutting down...
+2024-05-21 13:57:22.568 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-21 13:57:22.872 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-21 13:57:22.880 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-21 13:57:22.882 +05:30 [INF] Hosting environment: Development
+2024-05-21 13:57:22.882 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API
+2024-05-21 13:57:25.411 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Login - application/json 49
+2024-05-21 13:57:25.478 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-21 13:57:25.544 +05:30 [INF] Executing endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-21 13:57:25.588 +05:30 [INF] Route matched with {action = "SignIn", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.API.TokenModel]] SignIn(EMS.DB.Models.UserLogin) on controller EMS.API.LoginController (EMS.API).
+2024-05-21 13:57:25.813 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-21 13:57:25.876 +05:30 [INF] Executed action EMS.API.LoginController.SignIn (EMS.API) in 281.7642ms
+2024-05-21 13:57:25.882 +05:30 [INF] Executed endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-21 13:57:25.888 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Login - 400 null application/problem+json; charset=utf-8 479.9148ms
+2024-05-21 13:57:41.145 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5238/api/Login - application/json 7
+2024-05-21 13:57:41.151 +05:30 [INF] Executing endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-21 13:57:41.152 +05:30 [INF] Route matched with {action = "SignIn", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.API.TokenModel]] SignIn(EMS.DB.Models.UserLogin) on controller EMS.API.LoginController (EMS.API).
+2024-05-21 13:57:41.168 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-21 13:57:41.169 +05:30 [INF] Executed action EMS.API.LoginController.SignIn (EMS.API) in 17.1815ms
+2024-05-21 13:57:41.169 +05:30 [INF] Executed endpoint 'EMS.API.LoginController.SignIn (EMS.API)'
+2024-05-21 13:57:41.170 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5238/api/Login - 400 null application/problem+json; charset=utf-8 25.1916ms
+2024-05-21 14:07:17.744 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-21 14:07:17.891 +05:30 [INF] Now listening on: http://localhost:5238
+2024-05-21 14:07:17.894 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-21 14:07:17.895 +05:30 [INF] Hosting environment: Development
+2024-05-21 14:07:17.895 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API
