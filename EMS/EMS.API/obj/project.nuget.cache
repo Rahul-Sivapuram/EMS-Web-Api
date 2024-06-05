@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "R53oHIz6cDVbGAjWVc3hs6VAQhDm2Spfy5piqZGFLcGGqzbqudiEIC+yqTXFlbaUVLFusrh+UbU9VNVFoGt6AQ==",
+  "dgSpecHash": "nYoPzPmX0ZEXCzI68NyaBBQXKpAYGQDi+LRLYYwOKM4oaJT5Pa/fbNYEYYUUS78JnAwiwczJvHVM8irvd3q6wg==",
   "success": true,
   "projectFilePath": "C:\\Users\\rahul.sivapuram\\OneDrive - Technovert\\Desktop\\gitclassroom\\EMS-Web-Api\\ems\\EMS.API\\EMS.API.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\rahul.sivapuram\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.4\\microsoft.aspnetcore.authentication.jwtbearer.8.0.4.nupkg.sha512",
     "C:\\Users\\rahul.sivapuram\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.4\\microsoft.aspnetcore.authorization.8.0.4.nupkg.sha512",
     "C:\\Users\\rahul.sivapuram\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
+    "C:\\Users\\rahul.sivapuram\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "C:\\Users\\rahul.sivapuram\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.4\\microsoft.aspnetcore.cryptography.internal.8.0.4.nupkg.sha512",
     "C:\\Users\\rahul.sivapuram\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.4\\microsoft.aspnetcore.cryptography.keyderivation.8.0.4.nupkg.sha512",
     "C:\\Users\\rahul.sivapuram\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",

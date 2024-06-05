@@ -52,7 +52,6 @@ namespace EMS.DAL
             return newEmp.Id;
         }
 
-
         public async Task<bool> Update(int id, EmployeeDTO request)
         {
             var res = await _context.Employees.FirstOrDefaultAsync(x => x.Id == id);
@@ -162,30 +161,21 @@ namespace EMS.DAL
                     queryableEmployees = queryableEmployees.Where(emp => emp.FirstName.StartsWith(query.EmployeeName));
                 }
 
-                if (!string.IsNullOrEmpty(query.Location))
+                if (query.Location != null && query.Location.Any())
                 {
-                    queryableEmployees = queryableEmployees.Where(emp => emp.Location == query.Location);
+                    queryableEmployees = queryableEmployees.Where(emp => query.Location.Contains(emp.Location));
                 }
 
-                if (!string.IsNullOrEmpty(query.Department))
+                if (query.Department != null && query.Department.Any())
                 {
-                    queryableEmployees = queryableEmployees.Where(emp => emp.Department == query.Department);
+                    queryableEmployees = queryableEmployees.Where(emp => query.Department.Contains(emp.Department));
                 }
 
-                if (!string.IsNullOrEmpty(query.JobTitle))
+                if (query.Status != null && query.Status.Any())
                 {
-                    queryableEmployees = queryableEmployees.Where(emp => emp.Role == query.JobTitle);
+                    queryableEmployees = queryableEmployees.Where(emp => query.Status.Contains(emp.IsActive));
                 }
-
-                if (!string.IsNullOrEmpty(query.Manager))
-                {
-                    queryableEmployees = queryableEmployees.Where(emp => emp.Manager == query.Manager);
-                }
-
-                if (!string.IsNullOrEmpty(query.Project))
-                {
-                    queryableEmployees = queryableEmployees.Where(emp => emp.Project == query.Project);
-                }
+              
 
                 var filteredEmployees = await queryableEmployees
                 .Skip((query.PageNumber - 1) * query.PageSize)

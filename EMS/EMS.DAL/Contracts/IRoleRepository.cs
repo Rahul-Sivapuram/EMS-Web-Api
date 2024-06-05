@@ -9,5 +9,6 @@ namespace EMS.DAL
     public interface IRoleRepository
     {
         public Task<bool> AddRole(RoleDetail role);
+        //public Task<List<RoleDetail>> GetRoles();
     }
 }

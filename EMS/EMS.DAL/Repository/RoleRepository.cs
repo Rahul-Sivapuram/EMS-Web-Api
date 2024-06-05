@@ -39,5 +39,17 @@ namespace EMS.DAL
             }
             return false;
         }
+    
+        // public async Task<List<RoleDetail>> GetRoles()
+        // {
+        //     var res = await _context.Roles;
+        //     if (res == null)
+        //     {
+        //         return null;
+        //     }
+        //     return ans = new RoleDetail(
+
+        //     );
+        // }
     }
 }

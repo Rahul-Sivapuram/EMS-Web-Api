@@ -1,0 +1,387 @@
+2024-06-03 17:44:47.545 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-03 17:44:48.334 +05:30 [INF] Now listening on: https://localhost:7130
+2024-06-03 17:44:48.368 +05:30 [INF] Now listening on: http://localhost:5238
+2024-06-03 17:44:48.374 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-03 17:44:48.375 +05:30 [INF] Hosting environment: Development
+2024-06-03 17:44:48.375 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API
+2024-06-03 17:44:51.865 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger - null null
+2024-06-03 17:44:53.860 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger - 301 0 null 2006.5757ms
+2024-06-03 17:44:53.869 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/index.html - null null
+2024-06-03 17:44:54.285 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/swagger-ui-standalone-preset.js - null null
+2024-06-03 17:44:54.286 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/swagger-ui-bundle.js - null null
+2024-06-03 17:44:54.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/swagger-ui.css - null null
+2024-06-03 17:44:54.290 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/index.html - 200 null text/html;charset=utf-8 421.9059ms
+2024-06-03 17:44:54.295 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/_vs/browserLink - null null
+2024-06-03 17:44:54.310 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 17:44:54.440 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 130.6292ms
+2024-06-03 17:44:54.492 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-03 17:44:54.494 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-03 17:44:54.509 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 223.8461ms
+2024-06-03 17:44:54.500 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/swagger-ui.css - 200 143943 text/css 242.8335ms
+2024-06-03 17:44:54.763 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-03 17:44:54.764 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 478.3626ms
+2024-06-03 17:44:54.867 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7130/_vs/browserLink - 200 null text/javascript; charset=UTF-8 571.5238ms
+2024-06-03 17:44:55.261 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - null null
+2024-06-03 17:44:55.317 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/favicon-32x32.png - null null
+2024-06-03 17:44:55.317 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-06-03 17:44:55.318 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/favicon-32x32.png - 200 628 image/png 1.361ms
+2024-06-03 17:44:55.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 466.0278ms
+2024-06-03 19:52:50.352 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-03 19:52:50.520 +05:30 [INF] Now listening on: http://localhost:5238
+2024-06-03 19:52:50.525 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-03 19:52:50.526 +05:30 [INF] Hosting environment: Development
+2024-06-03 19:52:50.526 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API
+2024-06-03 19:52:52.697 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:52:52.918 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 223.3418ms
+2024-06-03 19:52:52.953 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:52:52.957 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 3.9637ms
+2024-06-03 19:52:53.332 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:52:53.704 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 371.5083ms
+2024-06-03 19:53:17.282 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?Status=true - null null
+2024-06-03 19:53:17.288 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-03 19:53:17.485 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-03 19:53:17.540 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-03 19:53:17.848 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-03 19:53:17.875 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 330.6479ms
+2024-06-03 19:53:17.875 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-03 19:53:17.876 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?Status=true - 400 null application/problem+json; charset=utf-8 593.8332ms
+2024-06-03 19:53:41.200 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:53:41.206 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 6.6137ms
+2024-06-03 19:53:41.221 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:53:41.221 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4169ms
+2024-06-03 19:53:41.421 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:53:41.435 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - EMS.API.EmployeesController.Get (EMS.API). See inner exception
+ ---> System.Reflection.AmbiguousMatchException: Ambiguous match found for 'EMS.DAL.EmployeeFilter Int32 PageNumber'.
+   at System.RuntimeType.GetPropertyImpl(String name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers)
+   at System.Type.GetProperty(String name, BindingFlags bindingAttr)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiParameterDescriptionExtensions.PropertyInfo(ApiParameterDescription apiParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiParameterDescriptionExtensions.CustomAttributes(ApiParameterDescription apiParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c.<GenerateParameters>b__16_0(ApiParameterDescription apiParam)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.ToList()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-03 19:53:41.445 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 23.6544ms
+2024-06-03 19:53:46.526 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:53:46.527 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 0.6959ms
+2024-06-03 19:53:46.538 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:53:46.538 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.7755ms
+2024-06-03 19:53:46.596 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:53:46.599 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - EMS.API.EmployeesController.Get (EMS.API). See inner exception
+ ---> System.Reflection.AmbiguousMatchException: Ambiguous match found for 'EMS.DAL.EmployeeFilter Int32 PageNumber'.
+   at System.RuntimeType.GetPropertyImpl(String name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers)
+   at System.Type.GetProperty(String name, BindingFlags bindingAttr)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiParameterDescriptionExtensions.PropertyInfo(ApiParameterDescription apiParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiParameterDescriptionExtensions.CustomAttributes(ApiParameterDescription apiParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c.<GenerateParameters>b__16_0(ApiParameterDescription apiParam)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.ToList()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-03 19:53:46.601 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 4.2246ms
+2024-06-03 19:53:50.605 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:53:50.613 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 7.6092ms
+2024-06-03 19:53:50.623 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:53:50.623 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2538ms
+2024-06-03 19:53:50.703 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:53:50.707 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - EMS.API.EmployeesController.Get (EMS.API). See inner exception
+ ---> System.Reflection.AmbiguousMatchException: Ambiguous match found for 'EMS.DAL.EmployeeFilter Int32 PageNumber'.
+   at System.RuntimeType.GetPropertyImpl(String name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiParameterDescriptionExtensions.PropertyInfo(ApiParameterDescription apiParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiParameterDescriptionExtensions.CustomAttributes(ApiParameterDescription apiParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c.<GenerateParameters>b__16_0(ApiParameterDescription apiParam)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.ToList()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-03 19:53:50.708 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 5.194ms
+2024-06-03 19:53:57.600 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:53:57.601 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 0.8256ms
+2024-06-03 19:53:57.620 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:53:57.621 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2377ms
+2024-06-03 19:53:57.677 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:53:57.680 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - EMS.API.EmployeesController.Get (EMS.API). See inner exception
+ ---> System.Reflection.AmbiguousMatchException: Ambiguous match found for 'EMS.DAL.EmployeeFilter Int32 PageNumber'.
+   at System.RuntimeType.GetPropertyImpl(String name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiParameterDescriptionExtensions.PropertyInfo(ApiParameterDescription apiParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiParameterDescriptionExtensions.CustomAttributes(ApiParameterDescription apiParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c.<GenerateParameters>b__16_0(ApiParameterDescription apiParam)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.ToList()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-03 19:53:57.681 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 3.9979ms
+2024-06-03 19:53:57.860 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:53:57.860 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 0.5094ms
+2024-06-03 19:53:57.866 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:53:57.867 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2556ms
+2024-06-03 19:53:57.918 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:53:57.920 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - EMS.API.EmployeesController.Get (EMS.API). See inner exception
+ ---> System.Reflection.AmbiguousMatchException: Ambiguous match found for 'EMS.DAL.EmployeeFilter Int32 PageNumber'.
+   at System.RuntimeType.GetPropertyImpl(String name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiParameterDescriptionExtensions.PropertyInfo(ApiParameterDescription apiParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiParameterDescriptionExtensions.CustomAttributes(ApiParameterDescription apiParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c.<GenerateParameters>b__16_0(ApiParameterDescription apiParam)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.ToList()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-03 19:53:57.920 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 2.8519ms
+2024-06-03 19:54:04.489 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:54:04.503 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 13.717ms
+2024-06-03 19:54:04.518 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:54:04.519 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 0.9685ms
+2024-06-03 19:54:04.531 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:54:04.532 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.307ms
+2024-06-03 19:54:04.688 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:54:04.696 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - EMS.API.EmployeesController.Get (EMS.API). See inner exception
+ ---> System.Reflection.AmbiguousMatchException: Ambiguous match found for 'EMS.DAL.EmployeeFilter Int32 PageNumber'.
+   at System.RuntimeType.GetPropertyImpl(String name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiParameterDescriptionExtensions.PropertyInfo(ApiParameterDescription apiParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiParameterDescriptionExtensions.CustomAttributes(ApiParameterDescription apiParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c.<GenerateParameters>b__16_0(ApiParameterDescription apiParam)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.ToList()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-03 19:54:04.698 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 10.014ms
+2024-06-03 19:54:06.727 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:54:06.727 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 0.5503ms
+2024-06-03 19:54:06.742 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:54:06.743 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2608ms
+2024-06-03 19:54:06.794 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:54:06.796 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - EMS.API.EmployeesController.Get (EMS.API). See inner exception
+ ---> System.Reflection.AmbiguousMatchException: Ambiguous match found for 'EMS.DAL.EmployeeFilter Int32 PageNumber'.
+   at System.RuntimeType.GetPropertyImpl(String name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c.<GenerateParameters>b__16_0(ApiParameterDescription apiParam)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.ToList()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-03 19:54:06.796 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 2.5125ms
+2024-06-03 19:54:15.582 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:54:15.612 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:54:15.620 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 38.2419ms
+2024-06-03 19:54:15.620 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 8.2085ms
+2024-06-03 19:54:15.633 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:54:15.633 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.1625ms
+2024-06-03 19:54:15.716 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:54:15.719 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - EMS.API.EmployeesController.Get (EMS.API). See inner exception
+ ---> System.Reflection.AmbiguousMatchException: Ambiguous match found for 'EMS.DAL.EmployeeFilter Int32 PageNumber'.
+   at System.RuntimeType.GetPropertyImpl(String name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c.<GenerateParameters>b__16_0(ApiParameterDescription apiParam)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.ToList()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-03 19:54:15.720 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 3.8048ms
+2024-06-03 19:55:31.427 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:55:31.428 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 1.0982ms
+2024-06-03 19:55:31.456 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:55:31.456 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2809ms
+2024-06-03 19:55:31.599 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:55:31.604 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - EMS.API.EmployeesController.Get (EMS.API). See inner exception
+ ---> System.Reflection.AmbiguousMatchException: Ambiguous match found for 'EMS.DAL.EmployeeFilter Int32 PageNumber'.
+   at System.RuntimeType.GetPropertyImpl(String name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c.<GenerateParameters>b__16_0(ApiParameterDescription apiParam)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.ToList()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-03 19:55:31.605 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 5.4646ms
+2024-06-03 19:55:37.380 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:55:37.381 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 0.5502ms
+2024-06-03 19:55:37.393 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:55:37.394 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.1803ms
+2024-06-03 19:55:37.455 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:55:37.457 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - EMS.API.EmployeesController.Get (EMS.API). See inner exception
+ ---> System.Reflection.AmbiguousMatchException: Ambiguous match found for 'EMS.DAL.EmployeeFilter Int32 PageNumber'.
+   at System.RuntimeType.GetPropertyImpl(String name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c.<GenerateParameters>b__16_0(ApiParameterDescription apiParam)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.ToList()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-03 19:55:37.458 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 2.8752ms
+2024-06-03 19:55:48.050 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:55:48.057 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 7.2077ms
+2024-06-03 19:55:48.070 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:55:48.070 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2272ms
+2024-06-03 19:55:48.187 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:55:48.192 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - EMS.API.EmployeesController.Get (EMS.API). See inner exception
+ ---> System.Reflection.AmbiguousMatchException: Ambiguous match found for 'EMS.DAL.EmployeeFilter Int32 PageNumber'.
+   at System.RuntimeType.GetPropertyImpl(String name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c.<GenerateParameters>b__16_0(ApiParameterDescription apiParam)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.ToList()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParameters(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-03 19:55:48.193 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 5.8901ms
+2024-06-03 19:55:51.922 +05:30 [INF] Application is shutting down...
+2024-06-03 19:56:06.533 +05:30 [INF] User profile is available. Using 'C:\Users\rahul.sivapuram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-03 19:56:06.709 +05:30 [INF] Now listening on: http://localhost:5238
+2024-06-03 19:56:06.713 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-03 19:56:06.713 +05:30 [INF] Hosting environment: Development
+2024-06-03 19:56:06.714 +05:30 [INF] Content root path: C:\Users\rahul.sivapuram\OneDrive - Technovert\Desktop\gitclassroom\EMS-Web-Api\EMS\EMS.API
+2024-06-03 19:56:09.681 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:56:09.785 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 105.4109ms
+2024-06-03 19:56:09.789 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:56:09.792 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 2.1663ms
+2024-06-03 19:56:09.849 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:56:09.969 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.9167ms
+2024-06-03 19:56:22.864 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:56:22.875 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 10.7481ms
+2024-06-03 19:56:22.882 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:56:22.882 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2817ms
+2024-06-03 19:56:22.944 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:56:22.964 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.895ms
+2024-06-03 19:56:25.274 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:56:25.275 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 0.6803ms
+2024-06-03 19:56:25.288 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:56:25.289 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4678ms
+2024-06-03 19:56:25.365 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:56:25.375 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.3622ms
+2024-06-03 19:56:37.574 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?Status=true - null null
+2024-06-03 19:56:37.578 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-03 19:56:37.607 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-03 19:56:37.629 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-03 19:56:37.749 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-03 19:56:37.766 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 133.6277ms
+2024-06-03 19:56:37.766 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-03 19:56:37.766 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?Status=true - 400 null application/problem+json; charset=utf-8 192.2205ms
+2024-06-03 19:56:45.993 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/index.html - null null
+2024-06-03 19:56:45.995 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/index.html - 200 null text/html;charset=utf-8 1.4298ms
+2024-06-03 19:56:46.033 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 19:56:46.033 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.3517ms
+2024-06-03 19:56:46.119 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - null null
+2024-06-03 19:56:46.124 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.0788ms
+2024-06-03 19:56:54.943 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?Status=true - null null
+2024-06-03 19:56:54.945 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-03 19:56:54.946 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-03 19:56:54.948 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-03 19:56:54.948 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 2.3217ms
+2024-06-03 19:56:54.948 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-03 19:56:54.948 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?Status=true - 400 null application/problem+json; charset=utf-8 5.8581ms
+2024-06-03 19:57:26.910 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?Status=true&EmployeeName=r - null null
+2024-06-03 19:57:26.913 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-03 19:57:26.913 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-03 19:57:28.138 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-03 19:57:28.139 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-03 19:57:30.862 +05:30 [INF] Executed DbCommand (402ms) [Parameters=[@__query_EmployeeName_0_startswith='?' (Size = 4000), @__query_Status_1='?' (Size = 4000), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+WHERE [e].[FirstName] LIKE @__query_EmployeeName_0_startswith ESCAPE N'\' AND [e].[IsActive] IN (
+    SELECT [q].[value]
+    FROM OPENJSON(@__query_Status_1) WITH ([value] bit '$') AS [q]
+)
+ORDER BY (SELECT 1)
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-06-03 19:57:31.122 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-03 19:57:31.141 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 4228.0316ms
+2024-06-03 19:57:31.142 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-03 19:57:31.144 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?Status=true&EmployeeName=r - 200 null application/json; charset=utf-8 4234.2331ms
+2024-06-03 19:57:40.375 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5238/api/Employees?Status=false&EmployeeName=r - null null
+2024-06-03 19:57:40.376 +05:30 [INF] Executing endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-03 19:57:40.376 +05:30 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[EMS.API.ApiResponse`1[EMS.DB.Models.EmployeeDetail]] Get(EMS.DAL.EmployeeFilter) on controller EMS.API.EmployeesController (EMS.API).
+2024-06-03 19:57:40.599 +05:30 [INF] Executed DbCommand (218ms) [Parameters=[@__query_EmployeeName_0_startswith='?' (Size = 4000), @__query_Status_1='?' (Size = 4000), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Dob], [e].[EmailId], [e].[FirstName], [e].[IsActive], [e].[JoiningDate], [e].[LastName], [e].[Location], [e].[Manager], [e].[MobileNumber], [e].[ModelStatus], [e].[ProfilePic], [e].[Project], [e].[Role], [e].[Uid]
+FROM [EmployeeDetails] AS [e]
+WHERE [e].[FirstName] LIKE @__query_EmployeeName_0_startswith ESCAPE N'\' AND [e].[IsActive] IN (
+    SELECT [q].[value]
+    FROM OPENJSON(@__query_Status_1) WITH ([value] bit '$') AS [q]
+)
+ORDER BY (SELECT 1)
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-06-03 19:57:40.600 +05:30 [INF] Executing ObjectResult, writing value of type 'EMS.API.ApiResponse`1[[EMS.DB.Models.EmployeeDetail, EMS.DB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-03 19:57:40.601 +05:30 [INF] Executed action EMS.API.EmployeesController.Get (EMS.API) in 225.0196ms
+2024-06-03 19:57:40.601 +05:30 [INF] Executed endpoint 'EMS.API.EmployeesController.Get (EMS.API)'
+2024-06-03 19:57:40.602 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5238/api/Employees?Status=false&EmployeeName=r - 200 null application/json; charset=utf-8 226.5603ms
+2024-06-03 19:57:45.459 +05:30 [INF] Application is shutting down...
